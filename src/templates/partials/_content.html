@@ -1,0 +1,26 @@
+<main class="main">
+  <div class="container">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt perspiciatis sapiente voluptate? Amet eius,
+      excepturi fuga ipsam perferendis quidem quisquam similique suscipit? Accusamus earum nobis quae sit vitae. Autem
+      distinctio eveniet magnam nisi officia officiis pariatur quae sit temporibus unde? A accusamus alias amet animi
+      aspernatur at atque, culpa cum deleniti dicta distinctio ducimus earum enim eum ex exercitationem facilis fugiat
+      id illo illum ipsa laborum libero maxime molestias officiis optio placeat porro quaerat quis reiciendis
+      repudiandae sapiente sed sequi tempora ut velit voluptatibus. Accusamus alias culpa, ea esse fuga laboriosam
+      maxime obcaecati, odit, provident quaerat repudiandae unde ut veniam?
+    </p>
+    <ul class="c-list">
+      {% for item in contentList %}
+        <li class="c-list__item">
+          <a href="#" class="c-list__link c-link">
+            <span class="c-link__text">{{item.text}}</span>
+            <span class="c-link__icon">
+              <img src="img/{{item.icon}}" alt="{{item.text}}">
+            </span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+    <button class="close-btn">X</button>
+  </div>
+</main>
