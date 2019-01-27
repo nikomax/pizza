@@ -11,3 +11,5 @@ PageList:
   ready: 50
 - file: login.html
   ready: 50
+- file: forgot.html
+  ready: 50
