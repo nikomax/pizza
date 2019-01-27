@@ -3,3 +3,11 @@ ProjectTitle: pizza
 PageList:
 - file: test.html
   ready: 50
+- file: landing.html
+  ready: 50
+- file: login-register.html
+  ready: 50
+- file: register.html
+  ready: 50
+- file: login.html
+  ready: 50

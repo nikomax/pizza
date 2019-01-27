@@ -1,37 +1,92 @@
 +font(OpenSans-SemiBold, OpenSans-SemiBold)
++font(OpenSans-Regular, OpenSans-Regular)
 
 =semi
 	font-family: OpenSans-SemiBold, Arial, sans-serif
+=regular
+	font-family: OpenSans-Regular, Arial, sans-serif
 
 html
 	font-size: 2vw
 
 body
 	font-size: 2.5rem
-	+semi
+	+regular
 	background: #FFF
 	line-height: 1.2
 	color: #000000
 
-.out
+p
+	font-size: 1.7rem
+	margin: 1rem 0
+
+.app
 	padding-top: 9rem
+	padding-bottom: 9rem
 
 .container
 	padding: 2rem 3.8rem
 
-.close-btn
-	margin: 0 -1rem 0 auto
-	height: 7rem
-	width: 7rem
-	border-radius: 50%
-	border: 1px solid #000
-	background-color: #FFFFFF
-	display: flex
-	align-items: center
-	justify-content: center
-	font-size: 5rem
-	box-shadow: 5px 6px 5px rgba(0,0,0,0.8)
-	color: #000
-	text-shadow: 3px 4px 6px rgba(0,0,0,.4)
-	-webkit-text-fill-color: black
-	-webkit-text-stroke: 1px #fff
+.fixed-menu
+	position: fixed
+	bottom: 2rem
+	right: 3rem
+	z-index: 2
+	&__btn
+		margin: auto 0 auto auto
+		height: 7rem
+		width: 7rem
+		border-radius: 50%
+		border: 1px solid #000
+		background-color: #FFFFFF
+		display: flex
+		align-items: center
+		justify-content: center
+		font-size: 3rem
+		box-shadow: 5px 6px 5px rgba(0,0,0,0.8)
+		color: #000
+		text-shadow: 3px 4px 6px rgba(0,0,0,.4)
+		-webkit-text-fill-color: black
+		-webkit-text-stroke: 1px #fff
+		.icon
+			transition: 0.3s
+			transform-origin: 50% 50%
+			stroke: #fff
+			filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))
+		.is-active &
+			.icon
+				transform: rotate(45deg)
+	&__content
+		padding: 2rem
+		animation: fade-out 0.3s
+		animation-fill-mode: forwards
+		background-color: rgba(255, 255, 255, 0.9)
+		transform-origin: 100% 100%
+		.is-active &
+			animation: fade-in 0.3s
+	&.is-active
+		transform: rotate(0)
+
+.start-page
+	padding: 10rem 2rem
+
+@keyframes fade-in
+	from
+		ransform: scale(1)
+		opacity: 0
+		transform: rotate(-90deg)
+	to
+		opacity: 1
+		transform: rotate(0)
+
+@keyframes fade-out
+	from
+		opacity: 1
+		transform: rotate(0)
+	99%
+		opacity: 0
+		transform: rotate(-90deg)
+	to
+		opacity: 0
+		transform: scale(0)
+

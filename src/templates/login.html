@@ -1,0 +1,56 @@
+---
+title: JinGou
+
+
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<div class="login-page">
+  <div class="login-page__deco">
+    <div class="decos">
+      <div class="decos__black-ring"></div>
+      <div class="decos__green-square"></div>
+      <div class="decos__red-square"></div>
+      <div class="decos__green-circle"></div>
+      <div class="decos__rose-circle"></div>
+      <div class="decos__violet-circle"></div>
+      <div class="decos__purple-circle"></div>
+    </div>
+  </div>
+  <div class="login-page__logo main-logo">
+    <div class="main-logo__rounds">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="main-logo__title">
+      <img src="img/main-logo.png" alt="JinGou">
+    </div>
+  </div>
+  <div class="login-page__title">Welcome Back</div>
+  <p>Login with</p>
+
+  <p>or</p>
+  <div class="login-page__form">
+    <form action="" class="s-form">
+      <div class="form-item">
+        <input type="email" class="s-input" placeholder="Email">
+      </div>
+      <div class="form-item">
+        <input type="password" class="s-input" placeholder="Password">
+      </div>
+      <div class="form-item">
+        <input type="text" class="s-input" placeholder="Stay Logged In">
+      </div>
+      <div class="s-form__btn">
+        <button type="submit" class="btn">Login</button>
+      </div>
+    </form>
+  </div>
+  <p><span>already on board </span><a href="#" class="theme-link">Login</a></p>
+
+</div>
+
+{% endblock %}

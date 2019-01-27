@@ -1,0 +1,141 @@
+.main-logo
+	padding: 15% 0
+	width: 100%
+	position: relative
+	z-index: 1
+	&__title
+		z-index: 1
+		img
+			display: block
+			width: 100%
+	&__cup-drink
+		position: absolute
+		height: 18.3rem
+		width: 9.3rem
+		bottom: 1rem
+		left: 50%
+		transform: translate(-50%, 0)
+		z-index: -1
+		animation: drinkCup 1.5s
+		animation-fill-mode: forwards
+		animation-delay: 2s
+		img
+			height: 100%
+			width: 100%
+	&__cup-pizza
+		position: absolute
+		height: 20rem
+		width: 12rem
+		bottom: -29rem
+		left: 100%
+		transform: translate(-74%,100%) scale(3)
+		animation: pizzaCup 1.5s
+		animation-delay: 2s
+		animation-fill-mode: forwards
+		img
+			height: 100%
+			width: 100%
+	&__rounds
+		z-index: -1
+		+vcenter
+		top: 46.1%
+		width: 69%
+		span
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%) scale(0)
+			opacity: 0
+			border-radius: 50%
+			&:nth-child(1)
+				padding-top: 100%
+				width: 100%
+				background-color: #ff9140
+				animation: logoRounds 0.5s
+				animation-fill-mode: forwards
+			&:nth-child(2)
+				padding-top: 85%
+				width: 85%
+				background-color: #ff842a
+				animation: logoRounds 0.5s
+				animation-delay: 0.3s
+				animation-fill-mode: forwards
+			&:nth-child(3)
+				padding-top: 70%
+				width: 70%
+				background-color: #ff6c00
+				animation: logoRounds 0.5s
+				animation-delay: 0.6s
+				animation-fill-mode: forwards
+
+.logo-decos
+	div
+		position: absolute
+		animation: bubbles 1s
+		animation-delay: 1.5s
+		animation-fill-mode: forwards
+	&__black-ring
+		top: -30.7rem
+		left: -22.2rem
+		height: 13.3rem
+		width: 13.3rem
+		border-radius: 50%
+		border: 1.3rem solid #000
+	&__green-square
+		top: -14.2rem
+		left: -11.6rem
+		height: 5rem
+		width: 5rem
+		background-color: #00ff54
+	&__green-circle
+		top: -28.6rem
+		left: 3.5rem
+		height: 9.5rem
+		width: 9.5rem
+		border-radius: 50%
+		background-color: #2cb108
+	&__rose-circle
+		top: -22.5rem
+		left: -4.2rem
+		height: 8.8rem
+		width: 8.8rem
+		border-radius: 50%
+		background-color: #ff7282
+	&__violet-circle
+		top: -28.3rem
+		left: 13rem
+		height: 4.6rem
+		width: 4.6rem
+		border-radius: 50%
+		background-color: #7444e8
+	&__purple-circle
+		top: -22.3rem
+		left: 14rem
+		height: 14rem
+		width: 14rem
+		border-radius: 50%
+		background-color: #7b33df
+
+@keyframes bubbles
+	to
+		top: 1rem
+		left: 50%
+		transform: translate(-50%, 0) scale(0)
+
+@keyframes logoRounds
+	to
+		transform: translate(-50%, -50%) scale(1)
+		opacity: 1
+
+@keyframes pizzaCup
+	to
+		bottom: 0
+		left: 40%
+		transform: translate(-100%, 90%) scale(1)
+
+@keyframes drinkCup
+	to
+		bottom: 0
+		left: 60%
+		transform: translate(0, 90%)
+		z-index: 1

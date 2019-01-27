@@ -24,8 +24,9 @@ contentList: [
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
-
-	{% include "partials/_header.html" %}
-	{% include "partials/_content.html" %}
+  <div class="app">
+    {% include "partials/_header.html" %}
+    {% include "partials/_content.html" %}
+  </div>
 
 {% endblock %}

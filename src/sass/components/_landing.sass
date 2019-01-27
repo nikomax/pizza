@@ -1,0 +1,66 @@
+.landing
+	min-height: 100vh
+	background-color: #ff6c00
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	overflow: hidden
+	&__inner
+		padding: 4rem 4rem
+	&__logo
+		width: 100%
+	&__title
+		+semi
+		color: #ffffff
+		text-align: center
+		font-size: 3rem
+		margin-bottom: 1rem
+	&__subtitle
+		+semi
+		color: #ffffff
+		text-align: center
+		font-size: 2rem
+	&__bottom
+		padding-bottom: 5rem
+		display: flex
+		justify-content: center
+		background-color: #FFFFFF
+		margin-top: 30rem
+		position: relative
+		z-index: 1
+		&:before
+			z-index: -1
+			position: absolute
+			content: ''
+			top: 0
+			right: 0
+			background-color: #FFFFFF
+			border-radius: 50%
+			transform: translate(40%, -30%)
+			padding-top: 100rem
+			width: 100rem
+	&__actions
+		display: flex
+		justify-content: center
+		align-items: center
+		position: relative
+	&__skip
+		position: absolute
+		top: 50%
+		transform: translate(100%, -50%)
+		right: -3rem
+		color: #ff6c00
+		font-size: 3rem
+		text-decoration: none
+
+.loading-rounds
+	display: flex
+	justify-content: center
+	span
+		display: block
+		height: 2.3rem
+		width: 2.3rem
+		border-radius: 50%
+		background-color: #ff6c00
+		&:not(:last-child)
+			margin-right: 1rem
