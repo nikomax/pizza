@@ -1,28 +1,67 @@
 +font(OpenSans-SemiBold, OpenSans-SemiBold)
 +font(OpenSans-Regular, OpenSans-Regular)
++font(OpenSans-Italic, OpenSans-Italic)
 
 =semi
 	font-family: OpenSans-SemiBold, Arial, sans-serif
 =regular
 	font-family: OpenSans-Regular, Arial, sans-serif
+=italic
+	font-family: OpenSans-Italic, Arial, sans-serif
 
 html
 	font-size: 2vw
 
 body
-	font-size: 2.5rem
+	font-size: 1.7rem
 	+regular
 	background: #FFF
 	line-height: 1.2
 	color: #000000
 
 p
-	font-size: 1.7rem
 	margin: 1rem 0
+
+.title
+	+semi
+	font-weight: 400
+	font-size: 2.9rem
+	text-align: center
+	margin-bottom: 1rem
 
 .app
 	padding-top: 9rem
 	padding-bottom: 9rem
+	position: relative
+	transition: 0.3s
+	&.menu-open
+		position: fixed
+		top: 0
+		left: 0
+		height: 100%
+		width: 100%
+		transform: translateX(40rem)
+		&:after
+			z-index: 10
+			content: ''
+			position: fixed
+			height: 100%
+			width: 100%
+			top: 0
+			left: 0
+			opacity: 0.6
+			background-color: #000
+	&.has-overlay
+		&:after
+			z-index: 10
+			content: ''
+			position: fixed
+			height: 100%
+			width: 100%
+			top: 0
+			left: 0
+			opacity: 0.6
+			background-color: #000
 
 .container
 	padding: 2rem 3.8rem

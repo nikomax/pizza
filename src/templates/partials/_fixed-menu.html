@@ -1,0 +1,17 @@
+<div class="fixed-menu js-fixed-menu">
+  <div class="fixed-menu__content">
+    <ul class="c-list">
+      {% for item in contentList %}
+      <li class="c-list__item">
+        <a href="#" class="c-list__link c-link">
+          <span class="c-link__text">{{item.text}}</span>
+          <span class="c-link__icon">
+                  <img src="img/{{item.icon}}" alt="{{item.text}}">
+                </span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <button class="fixed-menu__btn js-fixed-menu-btn">{{mixins.icon('plus')}}</button>
+</div>

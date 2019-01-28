@@ -1,0 +1,67 @@
+.sidebar
+	overflow-y: auto
+	padding: 5rem 3rem 2rem 0
+	z-index: 11
+	position: fixed
+	top: 0
+	left: 0
+	background-color: #ffffff
+	width: 40rem
+	min-height: 100vh
+	height: 100vh
+	color: #3d3d3d
+	transform: translateX(-100%)
+	transition: 0.3s
+	a
+		color: inherit
+		text-decoration: none
+	&__items
+		margin: 3rem 0
+	&__item
+		padding: 2rem 3rem
+		border-top: 0.1rem solid #cccccc
+		&:last-child
+			border-bottom: 0.1rem solid #cccccc
+	.menu-open &
+		box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.25)
+
+.sidebar-item
+	display: flex
+	align-items: center
+	&__icon
+		width: 6rem
+		margin-right: 2rem
+		display: flex
+		justify-content: center
+		.icon
+			font-size: 3rem
+			fill: #3d3d3d
+			.is-active &
+				fill: #ff6c00
+	&--exit
+		.sidebar-item__text
+			color: #ff0000
+		.sidebar-item__icon
+			.icon
+				fill: #ff0000
+	&.is-active
+		color: #ff6c00
+
+.s-user
+	&__photo
+		margin: 0 auto 2rem
+		height: 10rem
+		width: 10rem
+		border-radius: 50%
+		border: 0.2rem solid #ffffff
+		background-color: #3d3d3d
+		box-shadow: 7.5px 12.99px 45px 0px rgba(0, 0, 0, 0.2)
+		overflow: hidden
+		img
+			height: 100%
+			width: 100%
+			object-fit: cover
+	&__name
+		font-size: 2rem
+		text-align: center
+

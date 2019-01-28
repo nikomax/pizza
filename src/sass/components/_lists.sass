@@ -27,3 +27,21 @@
 		img
 			width: 65%
 			max-height: 80%
+
+.o-list
+	counter-reset: numb
+	margin: 1rem 0
+	+italic
+	font-size: 1.95rem
+	li
+		position: relative
+		counter-increment: numb
+		padding-left: 2rem
+		&:before
+			position: absolute
+			left: 0
+			top: 0
+			content: counter(numb) "."
+			+semi
+		&:not(:last-child)
+			margin-bottom: 1rem
