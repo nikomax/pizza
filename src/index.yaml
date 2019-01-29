@@ -17,7 +17,9 @@ PageList:
   ready: 50
 - file: code.html
   ready: 50
-- file: terms.html
+- file: notifications.html
   ready: 50
-- file: allergen.html
-  ready: 50
+#- file: terms.html
+#  ready: 50
+#- file: allergen.html
+#  ready: 50
