@@ -1,0 +1,61 @@
+<main class="main">
+  <div class="container">
+    <h2 class="title red-text">Concerned With Food Allergies ?</h2>
+    <p>
+      Menu items may contain or come into contact with
+      WHEAT, EGGS, PEANUTS, TREE NUTS, and MILK. For
+      more information, please speak with the Manager
+    </p>
+    <p>
+      Menu items may contain or come into contact with
+      WHEAT, EGGS, PEANUTS, TREE NUTS, and MILK. For
+      more information, please speak with the Manager
+    </p>
+    <div class="y-banner">
+      <p>
+        Please contact the Manager
+        before placing an ORDER
+        if you have any Concern.
+      </p>
+    </div>
+
+    <div class="allergen">
+      <div class="allergen__icon">
+        {{mixins.icon('bread')}}
+      </div>
+      <div class="allergen__info">
+        <div class="allergen__title">Cereals</div>
+        <div class="allergen__desc">
+          Containing gluten, namely: wheat (such
+          and khorasan wheat),rye, barley, oats
+        </div>
+      </div>
+    </div>
+
+    <div class="allergen">
+      <div class="allergen__icon">
+        {{mixins.icon('prawn')}}
+      </div>
+      <div class="allergen__info">
+        <div class="allergen__title">Crustaceans</div>
+        <div class="allergen__desc">
+          For example prawns, crabs, lobster, crayfish
+        </div>
+      </div>
+    </div>
+
+    <div class="allergen">
+      <div class="allergen__icon">
+        {{mixins.icon('egg')}}
+      </div>
+      <div class="allergen__info">
+        <div class="allergen__title">Eggs</div>
+        <div class="allergen__desc">
+          Butter Chicken, Dal Makhani, 3 Roti, Rice, & Papad
+        </div>
+      </div>
+    </div>
+
+    {% include "./_fixed-menu.html" %}
+  </div>
+</main>

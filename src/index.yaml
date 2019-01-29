@@ -13,3 +13,7 @@ PageList:
   ready: 50
 - file: forgot.html
   ready: 50
+- file: terms.html
+  ready: 50
+- file: allergen.html
+  ready: 50
