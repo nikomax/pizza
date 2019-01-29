@@ -29,11 +29,20 @@ p
 	text-align: center
 	margin-bottom: 1rem
 
+.text-lg
+	font-size: 3.23rem
+	margin: 2rem 0
+	& + &
+		margin-top: 5rem
+	&--center
+		text-align: center
+
 .app
 	padding-top: 9rem
 	padding-bottom: 9rem
 	position: relative
 	transition: 0.3s
+	min-height: 100vh
 	&.menu-open
 		position: fixed
 		top: 0
