@@ -4,7 +4,7 @@
 	box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.4)
 	border-radius: 0.5rem
 	background-color: #ADFCFF
-	padding: 1rem
+	padding: 0.3rem 1.2rem 1.5rem
 	margin: 2rem 0
 	&__top
 		display: flex
@@ -16,7 +16,50 @@
 		margin-bottom: 0.3rem
 	&__right
 		text-align: right
-		font-size: 1.2rem
+		font-size: 1.4rem
+	&__user
+		margin-bottom: 0.8rem
+	&__text
+		font-size: 1.95rem
+
+.review-rates
+	display: flex
+	justify-content: space-between
+	&__value
+		color: #ff6100
+		font-size: 12rem
+		line-height: 0.7
+		margin-bottom: 1.4rem
+	&__left
+		text-align: center
+	&__range
+		font-size: 2.5rem
+		+semi
+		color: #787878
+	&__right
+		text-align: right
+	&__item
+		line-height: 1
+		display: flex
+		align-items: center
+		justify-content: flex-end
+	&__count
+		+semi
+		font-size: 2rem
+		margin-top: 1rem
+	&__visual
+		margin-left: 0.2rem
+		position: relative
+		height: 0.9rem
+		min-width: 13.7rem
+		border: 1px solid #000
+		span
+			background-color: #ed8a19
+			top: 0
+			left: 9px
+			height: 100%
+			display: block
+
 
 .stars
 	display: flex
@@ -26,6 +69,7 @@
 		&:not(:last-child)
 			margin-right: 0.2rem
 		.icon
+			font-size: 1.5rem
 			fill: #ed8a19
 		&.is-active
 			opacity: 1
