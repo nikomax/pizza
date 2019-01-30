@@ -30,5 +30,46 @@
 		justify-content: space-between
 
 
+.taste-form
+	&__input, &__textarea
+		border: none
+		+regular
+		color: #353535
+		+placeholder-color(#353535)
+		width: 100%
+		background-color: #adfcff
+		border-radius: 0.4rem
+		font-size: 2.4rem
+		padding: 0.5rem 1rem
+		margin: 1rem 0
+	&__rate
+		margin: 1rem 0
+		border-radius: 0.4rem
+		display: flex
+		flex-direction: column
+		align-items: center
+		background-color: #adfcff
 
-
+.rank
+	margin: 2rem 0 1rem
+	display: inline-block
+	.icon
+		font-size: 4rem
+	&__rating
+		display: flex
+		flex-direction: row-reverse
+		justify-content: space-around
+		text-align: center
+		input
+			display: none
+		label
+			&:not(:last-child)
+				margin-left: 2rem
+			.icon
+				fill: rgba(237, 138, 25, 0.71)
+		input:checked ~ label
+			.icon
+				fill: #ed8a19
+		label:hover, label:hover ~ label
+			.icon
+				fill: #ed8a19
