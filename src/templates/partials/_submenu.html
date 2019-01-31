@@ -2,13 +2,13 @@
   <div class="container">
     <div class="m-items">
       {% for item in food %}
-      <a href="#" class="m-item">
-        <div class="m-item__image">
+      <div class="m-item">
+        <div class="m-item__image js-item-modal-btn" data-item-title="{{item.title}}" data-item-image="/img/food.png" data-item-desc="{{item.desc}}">
           {% if item.image %}
             <img src="{{item.image}}" alt="{{item.title}}">
           {% endif %}
         </div>
-        <div class="m-item__content">
+        <a href="#" class="m-item__content">
           <div class="m-item__title">{{item.title}}</div>
           <div class="m-item__middle">
             <div class="m-item__desc">{{item.desc}}</div>
@@ -25,11 +25,18 @@
             </div>
             <div class="m-item__pay-bonus">Pay With {{item.payPts}} pts</div>
           </div>
-        </div>
+        </a>
         <div class="m-item__price">£ {{item.price}}</div>
-      </a>
+      </div>
       {% endfor %}
     </div>
     {% include "./_fixed-menu.html" %}
+  </div>
+  <div class="item-modal js-item-modal">
+    <div class="item-modal__title js-item-modal-title">test</div>
+    <div class="item-modal__desc js-item-modal-desc">test</div>
+    <div class="item-modal__image">
+      <img src="" alt="" class="js-item-modal-image">
+    </div>
   </div>
 </main>

@@ -1,3 +1,5 @@
+import './components/item-modal'
+
 const btn = $('.js-fixed-menu-btn');
 const burgerBtn = $('.js-burger');
 const app = $('.js-app');
