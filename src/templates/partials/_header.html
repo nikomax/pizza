@@ -1,11 +1,17 @@
 <header class="header">
   <div class="header__inner">
     <div class="header__left">
-      <div class="header__burger">
-        <button class="burger js-burger">
-          <img src="img/burger.png" alt="Burger">
-        </button>
-      </div>
+      {% if headerBack %}
+        <a href="#" class="header__back">
+          {{mixins.icon('back-icon')}}
+        </a>
+      {% else %}
+        <div class="header__burger">
+          <button class="burger js-burger">
+            <img src="img/burger.png" alt="Burger">
+          </button>
+        </div>
+      {% endif %}
       <div class="header__loyalty">
         <div class="loyalty">
           <span class="loyalty__icon">
@@ -35,7 +41,7 @@
         <div class="halal">
           <img src="img/halal.png" alt="Halal">
         </div>
-        <a href="#" class="cart">
+        <a href="#" class="cart js-cart-link">
           <span class="cart__icon">
             <img src="img/cart.png" alt="Cart">
           </span>

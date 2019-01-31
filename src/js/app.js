@@ -1,12 +1,15 @@
 import './components/item-modal'
+import './components/popup'
 
-const btn = $('.js-fixed-menu-btn');
+const fixedMenuBtn = $('.js-fixed-menu-btn');
 const burgerBtn = $('.js-burger');
+const cartLink = $('.js-cart-link');
 const app = $('.js-app');
 const sidebar = $('.js-sidebar');
+const cart = $('.js-cart-menu');
 const verification = $('.js-verification');
 
-btn.on('click', (e) => {
+fixedMenuBtn.on('click', (e) => {
   $(e.currentTarget).parents('.js-fixed-menu').toggleClass('is-active');
 });
 
@@ -14,10 +17,17 @@ burgerBtn.on('click', () => {
   app.toggleClass('menu-open');
 });
 
+cartLink.on('click', (e) => {
+  e.preventDefault();
+  app.toggleClass('cart-open');
+});
+
 app.mouseup(function (e) {
-  const div = sidebar;
-  if (div.has(e.target).length === 0 && app.hasClass('menu-open')) {
+  if (sidebar.has(e.target).length === 0 && app.hasClass('menu-open')) {
     app.removeClass('menu-open');
+  }
+  if (cart.has(e.target).length === 0 && app.hasClass('cart-open')) {
+    app.removeClass('cart-open');
   }
 });
 

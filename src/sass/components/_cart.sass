@@ -1,0 +1,34 @@
+.cart-menu
+	overflow-y: auto
+	padding: 2rem
+	z-index: 11
+	position: fixed
+	top: 0
+	right: 0
+	background-color: #7b7b7b
+	width: 41rem
+	min-height: 100vh
+	height: 100vh
+	transform: translateX(100%)
+	transition: 0.3s
+	color: #ffffff
+	&__title
+		font-size: 4rem
+		display: flex
+		justify-content: center
+		align-items: center
+		.icon
+			font-size: 6rem
+			fill: #ffffff
+	&__buttons
+		display: flex
+		justify-content: space-between
+
+
+
+
+
+
+	.cart-open &
+		//box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.25)
+		transform: translateX(0)

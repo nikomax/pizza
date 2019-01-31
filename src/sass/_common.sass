@@ -1,6 +1,7 @@
 +font(OpenSans-SemiBold, OpenSans-SemiBold)
 +font(OpenSans-Regular, OpenSans-Regular)
 +font(OpenSans-Italic, OpenSans-Italic)
++font(Raleway-Regular, Raleway-Regular)
 
 =semi
 	font-family: OpenSans-SemiBold, Arial, sans-serif
@@ -8,6 +9,8 @@
 	font-family: OpenSans-Regular, Arial, sans-serif
 =italic
 	font-family: OpenSans-Italic, Arial, sans-serif
+=raleway
+	font-family: Raleway-Regular, Arial, sans-serif
 
 html
 	font-size: 2vw
@@ -43,24 +46,12 @@ p
 	position: relative
 	transition: 0.3s
 	min-height: 100vh
-	&.menu-open
-		position: fixed
-		top: 0
-		left: 0
-		height: 100%
-		width: 100%
-		transform: translateX(40rem)
-		&:after
-			z-index: 10
-			content: ''
-			position: fixed
-			height: 100%
-			width: 100%
-			top: 0
-			left: 0
-			opacity: 0.6
-			background-color: #000
-	&.has-overlay
+	&.menu-open, &.cart-open
+		//position: fixed
+		//top: 0
+		//left: 0
+		//height: 100%
+		//width: 100%
 		&:after
 			z-index: 10
 			content: ''
