@@ -1,0 +1,34 @@
+<main class="main">
+  <div class="container">
+    <div class="m-items">
+      <div class="m-item">
+        <div class="m-item__image">
+          <img src="img/pizza.png" alt="Pizza">
+        </div>
+        <div class="m-item__content">
+          <div class="m-item__title">Stoupid Prawn Pizza</div>
+          <div class="m-item__middle">
+            <div class="m-item__desc">
+              Stoupid Casing  Doner Meat
+              Tomato Sauce  Onions
+            </div>
+            <div class="m-item__btn">
+              {{mixins.icon('right')}}
+            </div>
+          </div>
+          <div class="m-item__bottom">
+            <div class="m-item__get-bonus">
+              <div class="bonus-earn">
+                <div class="bonus-earn__icon">{{mixins.icon('crown')}}</div>
+                <div class="bonus-earn__value">Get 10  pts</div>
+              </div>
+            </div>
+            <div class="m-item__pay-bonus">Pay With 100 pts</div>
+          </div>
+        </div>
+        <div class="m-item__price">£ 3.00</div>
+      </div>
+    </div>
+    {% include "./_fixed-menu.html" %}
+  </div>
+</main>

@@ -1,0 +1,56 @@
+.m-item
+	display: flex
+	position: relative
+	&__price
+		position: absolute
+		top: 0
+		right: 0
+	&__image
+		height: 10rem
+		width: 10rem
+		min-width: 10rem
+		border-radius: 50%
+		overflow: hidden
+		background-color: #ffffff
+		box-shadow: 2px 3px 12px 1px rgba(0, 0, 0, 0.75)
+		img
+			height: 100%
+			width: 100%
+			object-fit: contain
+	&__title
+		font-size: 2rem
+		+semi
+		margin-bottom: 1rem
+	&__middle
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__desc
+		+italic
+		font-size: 1.7rem
+		color: #434343
+	&__btn
+		height: 4rem
+		width: 4rem
+		min-width: 4rem
+		border-radius: 50%
+		border: 2px solid #ff6c00
+		position: relative
+		font-size: 2rem
+		.icon
+			fill: #ff6c00
+			position: absolute
+			top: 50%
+			left: 55%
+			transform: translate(-50%, -50%)
+	&__bottom
+		display: flex
+		justify-content: space-between
+
+.bonus-earn
+	display: flex
+	align-items: center
+	&__icon
+		margin-right: 0.3rem
+		.icon
+			fill: #0078ff

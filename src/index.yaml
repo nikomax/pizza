@@ -29,3 +29,5 @@ PageList:
   ready: 50
 - file: open-delivery-times.html
   ready: 50
+- file: submenu.html
+  ready: 50
