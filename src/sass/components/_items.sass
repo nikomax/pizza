@@ -109,8 +109,8 @@
 
 .item-banner
 	position: relative
-	margin: 0 -2rem
-	padding: 0 2rem
+	//margin: 0 -2rem
+	//padding: 0 2rem
 	&__container
 		border: 0.1rem solid #000
 		box-shadow: 3px 4px 16px 0px rgba(0, 0, 0, 0.79)
@@ -153,7 +153,7 @@
 		z-index: 1
 		position: absolute
 		top: 1.9rem
-		left: 0
+		left: -2rem
 		.feedback-link
 			border-radius: 0 0.4rem 0.4rem 0
 			border-width: 0.15rem 0.15rem 0.15rem 0
@@ -161,7 +161,7 @@
 		z-index: 1
 		position: absolute
 		top: 2rem
-		right: 0
+		right: -2rem
 		.vertical-link
 			border-radius: 0.4rem 0 0 0.4rem
 			border-width: 0.15rem 0 0.15rem 0.15rem
@@ -182,6 +182,9 @@
 			font-size: 1.8rem
 			margin-right: 0.5rem
 			align-self: center
+	&__variant
+		font-size: 1.95rem
+		margin-bottom: 0.5rem
 	&__title
 		+semi
 		font-size: 2.4rem

@@ -1,5 +1,6 @@
 import './components/item-modal'
 import './components/popup'
+import './components/accordion'
 
 const fixedMenuBtn = $('.js-fixed-menu-btn');
 const burgerBtn = $('.js-burger');
@@ -71,3 +72,15 @@ verification.on('keyup', 'input', goToNextInput);
 verification.on('keydown', 'input', onKeyDown);
 verification.on('click', 'input', onFocus);
 
+const bonuses = $('.js-bonuses');
+const bonusesRevert = $('.js-bonuses-revert');
+
+$('.js-variant').scroll( (e) => {
+  if ($(e.currentTarget).scrollLeft() !== 0) {
+    bonuses.addClass('is-hidden');
+    bonusesRevert.removeClass('is-hidden');
+  } else {
+    bonuses.removeClass('is-hidden');
+    bonusesRevert.addClass('is-hidden');
+  }
+});

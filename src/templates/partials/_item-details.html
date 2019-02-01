@@ -1,6 +1,10 @@
 <main class="main">
   <div class="container">
     <div class="item-details">
+      <div class="item-details__variant">
+        <span class="bonuses js-bonuses">Shop</span>
+        <span class="bonuses is-hidden js-bonuses-revert">Delivery</span>
+      </div>
       <div class="item-banner">
         <div class="item-banner__feedback">
           <a href="#" class="feedback-link">
@@ -28,7 +32,7 @@
           </div>
         </div>
       </div>
-      <div class="item-details__loyalty">
+      <div class="item-details__loyalty js-bonuses bonuses-hide">
         <div class="bonus-earn">
           <div class="bonus-earn__icon">{{mixins.icon('crown')}}</div>
           <div class="bonus-earn__value">Earn 10 pts</div>
@@ -64,7 +68,7 @@
         <div class="loyalty-bank__text">Points In Loyalty Bank</div>
       </div>
       <div class="total">
-        <div class="total__items">
+        <div class="total__items js-variant">
           <div class="total__item total-item">
             <div class="total-item__title">Only In Shop-Visit Jingou In Person</div>
             <div class="total-item__content">
@@ -86,7 +90,7 @@
             </div>
           </div>
           <div class="total__item total-item">
-            <div class="total-item__title">Only In Shop-Visit Jingou In Person</div>
+            <div class="total-item__title">Valid For Home Delivery</div>
             <div class="total-item__content">
               <div class="total-item__top">
                 <div class="total-item__swipe">
@@ -109,9 +113,9 @@
       <div class="main__buttons main__buttons--sm main__buttons--center">
         <a href="#" class="btn btn--sm btn--rainbow">Add & Continue</a>
       </div>
-      <div class="main__buttons main__buttons--sm">
+      <div class="main__buttons main__buttons--center main__buttons--sm">
         <a href="#" class="btn btn--sm">Add To Cart</a>
-        <a href="#" class="btn btn--sm btn--blue">Pay With Pts</a>
+        <a href="#" class="btn btn--sm btn--blue js-bonuses bonuses">Pay With Pts</a>
       </div>
     </div>
     {% include "./_fixed-menu.html" %}
@@ -120,7 +124,7 @@
     <div class="s-popup__inner s-popup__inner--add-order">
       <button class="s-popup__close js-popup-close">X</button>
       <p>Order Added</p>
-      <p class="blue-text">Continue with adding to the Order</p>
+      <p>Continue with adding to the Order</p>
     </div>
   </div>
   <div class="s-popup js-popup {% if itemDetailsWarningModal %}is-active{% endif %}">
