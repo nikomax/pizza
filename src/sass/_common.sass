@@ -111,6 +111,26 @@ p
 .red-text
 	color: #ff0000
 
+
+.bonus-earn
+	+semi
+	display: flex
+	align-items: flex-end
+	&__icon
+		line-height: 0
+		margin-right: 0.3rem
+		font-size: 2.3rem
+		.icon
+			fill: #0078ff
+	&--cart
+		align-items: flex-start
+		font-size: 2rem
+		.bonus-earn__icon
+			font-size: 2rem
+		.bonus-earn__value
+			flex-grow: 1
+			text-align: right
+
 @keyframes fade-in
 	from
 		ransform: scale(1)
