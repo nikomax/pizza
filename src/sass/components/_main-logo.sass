@@ -18,7 +18,7 @@
 		z-index: -1
 		animation: drinkCup 1.5s
 		animation-fill-mode: forwards
-		animation-delay: 2s
+		animation-delay: 3s
 		img
 			height: 100%
 			width: 100%
@@ -30,7 +30,7 @@
 		left: 100%
 		transform: translate(-74%,100%) scale(3)
 		animation: pizzaCup 1.5s
-		animation-delay: 2s
+		animation-delay: 3s
 		animation-fill-mode: forwards
 		img
 			height: 100%
@@ -70,9 +70,10 @@
 
 .logo-decos
 	div
+		opacity: 0
 		position: absolute
-		animation: bubbles 1s
-		animation-delay: 1.5s
+		animation: bubbles 4s
+		animation-delay: 0.5s
 		animation-fill-mode: forwards
 	&__black-ring
 		top: -30.7rem
@@ -117,7 +118,13 @@
 		background-color: #7b33df
 
 @keyframes bubbles
+	from
+		transform: translate(-50%, -100%) scale(0.5)
+	20%
+		opacity: 1
+		transform: translate(-50%, -100%) scale(1.2)
 	to
+		opacity: 1
 		top: 1rem
 		left: 50%
 		transform: translate(-50%, 0) scale(0)

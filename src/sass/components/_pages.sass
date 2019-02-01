@@ -10,6 +10,22 @@
 		z-index: 1
 		display: flex
 		justify-content: space-between
+	&__title
+		opacity: 0
+		animation: fade-start-title 0.5s
+		animation-delay: 3s
+		animation-fill-mode: forwards
+		text-align: center
+		position: absolute
+		width: 100%
+		left: 0
+		font-size: 6rem
+		top: 7rem
+		+semi
+
+@keyframes fade-start-title
+	to
+		opacity: 1
 
 .login-page
 	min-height: 100vh
@@ -71,6 +87,8 @@
 	right: 0
 	width: 100%
 	span
+		animation: bubblesCome 2s
+		animation-fill-mode: forwards
 		background-color: #c6c6c6
 		position: absolute
 		&:nth-child(1)
@@ -135,7 +153,13 @@
 	bottom: 0
 	right: 0
 	width: 100%
+	animation: bubblesOut 4s
+	animation-fill-mode: forwards
+	animation-delay: 1.5s
 	span
+		animation: bubblesCome 2.5s
+		//animation-delay: 0.5s
+		animation-fill-mode: forwards
 		position: absolute
 		&:nth-child(1)
 			bottom: 5.6rem
@@ -193,6 +217,22 @@
 			border-radius: 50%
 			border: 0.4rem solid #000
 
+@keyframes bubblesCome
+	from
+		bottom: 0
+		right: 0
+		opacity: 0
+		transform: translate(0) scale(0)
+	to
+		transform: translate(0) scale(1)
+		opacity: 1
+
+@keyframes bubblesOut
+	to
+		transform: translate(-150%, 0) scale(1.5)
+		opacity: 0
+
+
 .thanks
 	margin-top: 4rem
 	&__icon
@@ -212,6 +252,8 @@
 	left: 0
 	width: 100%
 	span
+		animation: bubblesComeTop 2.5s
+		animation-fill-mode: forwards
 		position: absolute
 		display: block
 		&:nth-child(1)
@@ -281,6 +323,8 @@
 	position: relative
 	div
 		position: absolute
+		animation: bubblesComeTop 2.5s
+		animation-fill-mode: forwards
 	&__black-ring
 		top: 2.4rem
 		left: -21rem
@@ -331,3 +375,18 @@
 		width: 7.3rem
 		border-radius: 50%
 		background-color: #b33df3
+
+@keyframes bubblesComeTop
+	from
+		top: 0
+		left: 0
+		opacity: 0
+		transform: translate(0) scale(0)
+	to
+		transform: translate(0) scale(1)
+		opacity: 1
+
+//@keyframes bubblesOut
+//	to
+//		transform: translate(-150%, 0) scale(1.5)
+//		opacity: 0
