@@ -1,0 +1,55 @@
+<main class="main">
+  <div class="container">
+    <div class="cat-menu">
+      <a href="./open-delivery-times.html" class="times-banner {% if isOpen %}is-open{% endif %} {% if isDelivering %}is-delivering{% endif %}">
+        <div class="times-banner__title">Opening & Delivering Times{{mixins.icon('bottom')}}</div>
+        <div class="times-banner__info">
+          <div class="times-banner__shop times-banner__shop--open">
+            <img src="img/shop-open.png" alt="Shop Open">
+          </div>
+          <div class="times-banner__shop times-banner__shop--closed">
+            <img src="img/shop-closed.png" alt="Shop Closed">
+          </div>
+          <div class="times-banner__check">Check Opening&nbsp;Times</div>
+          <div class="times-banner__delivering">
+            <div class="times-banner__deliver">
+              <img src="img/deliver.png" alt="Courier">
+            </div>
+            <div class="times-banner__time">
+              Now Delivering
+              Until 12.30 am
+            </div>
+          </div>
+          <div class="times-banner__not-delivering">
+            Check Delivering&nbsp;Times
+          </div>
+        </div>
+      </a>
+      {% for item in categoryMenuItems %}
+        <a href="./submenu.html" class="cat-menu-item">
+          <div class="cat-menu-item__image">
+            {% if item.image %}
+              <img src="{{item.image}}" alt="{{item.title}}">
+            {% endif %}
+          </div>
+          <div class="cat-menu-item__main">
+            <div class="cat-menu-item__title {% if item.colored %}cat-menu-item__title--orange{% endif %}">{{item.title}}</div>
+            <div class="cat-menu-item__count"><span>{{item.count}}</span> Items</div>
+          </div>
+          <div class="cat-menu-item__info">
+            <div class="cat-menu-item__loyalty">{{mixins.icon('crown')}}</div>
+            <div class="cat-menu-item__button">{{mixins.icon('right')}} <img src="img/signal.png" alt="Signal"></div>
+            <div class="cat-menu-item__serving {% if item.stopServing %}is-stopped{% endif %}">
+              {% if item.stopServing %}
+                Stopped Serving
+              {% else %}
+                Now Serving
+              {% endif %}
+            </div>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+    {% include "./_fixed-menu.html" %}
+  </div>
+</main>

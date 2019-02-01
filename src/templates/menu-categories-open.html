@@ -1,0 +1,70 @@
+---
+title: JinGou
+
+isOpen: true
+
+isDelivering: true
+
+categoryMenuItems: [
+  {
+    image: 'img/pizza.png',
+    title: 'Offers',
+    count: '12',
+    colored: true
+  },{
+    image: 'img/pizza.png',
+    title: 'Breakfast',
+    count: '12',
+    stopServing: true
+  },{
+    title: 'Stoupid Pizza',
+    count: '12',
+    stopServing: true
+  },{
+    title: 'Quinkee',
+    count: '12',
+    stopServing: true
+  },{
+    title: 'Puffy Wraps',
+    count: '12',
+    stopServing: true
+  },{
+    title: 'Soft Ice Cream',
+    count: '12'
+  },{
+    title: 'Soft Ice Cream',
+    count: '12'
+  }
+]
+
+contentList: [
+  {
+    text: 'Loyalty',
+    icon: 'icon-loyalty.png'
+  },{
+    text: 'Notification',
+    icon: 'icon-notification.png'
+  },{
+    text: 'Menu',
+    icon: 'icon-menu.png'
+  },{
+    text: 'Cart',
+    icon: 'icon-cart.png'
+  },{
+    text: 'Offers',
+    icon: 'icon-offers.png'
+  }
+]
+
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+  <div class="app js-app">
+    {% include "partials/_header.html" %}
+    {% include "partials/_menu-categories.html" %}
+    {% include "partials/_sidebar.html" %}
+    {% include "partials/_cart.html" %}
+  </div>
+
+{% endblock %}

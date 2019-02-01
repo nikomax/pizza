@@ -31,3 +31,9 @@ PageList:
   ready: 50
 - file: submenu.html
   ready: 50
+- file: menu-categories.html
+  ready: 50
+- file: menu-categories-open.html
+  ready: 50
+- file: item-details.html
+  ready: 50
