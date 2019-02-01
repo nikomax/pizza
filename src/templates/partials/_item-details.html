@@ -116,4 +116,29 @@
     </div>
     {% include "./_fixed-menu.html" %}
   </div>
+  <div class="s-popup js-popup {% if itemDetailsOrderModal %}is-active{% endif %}">
+    <div class="s-popup__inner s-popup__inner--add-order">
+      <button class="s-popup__close js-popup-close">X</button>
+      <p>Order Added</p>
+      <p class="blue-text">Continue with adding to the Order</p>
+    </div>
+  </div>
+  <div class="s-popup js-popup {% if itemDetailsWarningModal %}is-active{% endif %}">
+    <div class="s-popup__inner s-popup__inner--choose">
+      <button class="s-popup__close js-popup-close">X</button>
+      <div class="choose">
+        <div class="choose__icon">
+          <img src="img/warning.png" alt="Warning">
+        </div>
+        <div class="choose__title">Choose Shop Or Delivery</div>
+        <div class="choose__text">
+          Please choose the shop part of menu. This will entil you to Loyalty Points. If you want the items to be delivered choose Delivery
+        </div>
+        <div class="choose__buttons">
+          <a href="#" class="btn btn--sm btn--green-grad">In Shop</a>
+          <a href="#" class="btn btn--sm btn--red-grad">Deliver</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
