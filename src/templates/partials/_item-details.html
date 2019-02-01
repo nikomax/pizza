@@ -1,7 +1,118 @@
 <main class="main">
   <div class="container">
     <div class="item-details">
-
+      <div class="item-banner">
+        <div class="item-banner__feedback">
+          <a href="#" class="feedback-link">
+            <span class="feedback-link__stars">
+              <img src="img/star.png" alt="star">
+              <img src="img/star.png" alt="star">
+              <img src="img/star.png" alt="star">
+              <img src="img/star.png" alt="star">
+              <img src="img/star.png" alt="star">
+            </span>
+            <span class="feedback-link__text">FEED BACK</span>
+          </a>
+        </div>
+        <div class="item-banner__offers">
+          <a href="#" class="vertical-link">offers</a>
+        </div>
+        <div class="item-banner__container">
+          <div class="item-banner__pole"></div>
+          <a href="#" class="item-banner__image">
+            <img src="img/pizza.png" alt="Food">
+            <div class="item-banner__image-label">Not Available</div>
+          </a>
+          <div class="item-banner__price">
+            <div class="price-box">£ 4.65</div>
+          </div>
+        </div>
+      </div>
+      <div class="item-details__loyalty">
+        <div class="bonus-earn">
+          <div class="bonus-earn__icon">{{mixins.icon('crown')}}</div>
+          <div class="bonus-earn__value">Earn 10 pts</div>
+        </div>
+        <div class="bonus-pay">Pay With 100 pts</div>
+      </div>
+      <div class="align-right">
+        <a href="#" class="allergen-link">Allergens !</a>
+      </div>
+      <div class="item-details__title">Stoupid Prawn Pizza</div>
+      <div class="item-details__desc">
+        <p>Prawn with Cheese & Sauce in Stoupid Casing.</p>
+        <p>Any Flavour Milk 500 ml Quinkee Any Flavour Milk</p>
+        <p>3rd line of description text 3rd line of description</p>
+      </div>
+      <div class="quantity">
+        <div class="quantity__title">More:</div>
+        <div class="quantity__content">
+          <div class="quantity__text">Quantity</div>
+          <div class="quantity__count">2</div>
+          <div class="quantity__buttons">
+            <button class="quantity__button"><span>-</span></button>
+            <button class="quantity__button quantity__button--plus"><span>+</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="main__buttons main__buttons--center">
+        <a href="#" class="btn btn--violet btn--sm">Order Options</a>
+      </div>
+      <div class="loyalty-bank">
+        <div class="loyalty-bank__icon">{{mixins.icon('crown')}}</div>
+        <div class="loyalty-bank__count">450</div>
+        <div class="loyalty-bank__text">Points In Loyalty Bank</div>
+      </div>
+      <div class="total">
+        <div class="total__items">
+          <div class="total__item total-item">
+            <div class="total-item__title">Only In Shop-Visit Jingou In Person</div>
+            <div class="total-item__content">
+              <div class="total-item__top">
+                <div class="total-item__icon">
+                  <img src="img/shop.png" alt="Shop">
+                </div>
+                <div class="total-item__info">Earn 20 pts</div>
+                <div class="total-item__info total-item__info--blue">Pay With 200 pts</div>
+                <div class="total-item__swipe">
+                  <img src="img/swipe-left.png" alt="swipe">
+                </div>
+              </div>
+              <div class="total-item__bottom">
+                <div class="total-item__count">2</div>
+                <div class="total-item__food">Stoupid Prawn</div>
+                <div class="total-item__cost">Total Cost £9.30</div>
+              </div>
+            </div>
+          </div>
+          <div class="total__item total-item">
+            <div class="total-item__title">Only In Shop-Visit Jingou In Person</div>
+            <div class="total-item__content">
+              <div class="total-item__top">
+                <div class="total-item__swipe">
+                  <img src="img/swipe-right.png" alt="swipe">
+                </div>
+                <div class="total-item__info total-item__info--yellow">No Loyalty Points for Delivery</div>
+                <div class="total-item__icon">
+                  <img src="img/bike.png" alt="Bike">
+                </div>
+              </div>
+              <div class="total-item__bottom">
+                <div class="total-item__count">2</div>
+                <div class="total-item__food">Stoupid Prawn</div>
+                <div class="total-item__cost">Total Cost £9.30</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main__buttons main__buttons--sm main__buttons--center">
+        <a href="#" class="btn btn--sm btn--rainbow">Add & Continue</a>
+      </div>
+      <div class="main__buttons main__buttons--sm">
+        <a href="#" class="btn btn--sm">Add To Cart</a>
+        <a href="#" class="btn btn--sm btn--blue">Pay With Pts</a>
+      </div>
     </div>
     {% include "./_fixed-menu.html" %}
   </div>

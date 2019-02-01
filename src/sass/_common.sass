@@ -31,6 +31,21 @@ body
 p
 	margin: 1rem 0
 
+.align-right
+	text-align: right
+
+.price-box
+	display: inline-block
+	+raleway
+	background-image: url("../img/price-bage.png")
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	padding: 0.2rem 1.3rem 1.5rem 2rem
+
+.bonus-pay
+	color: #0078ff
+	+semi
+
 .title
 	+semi
 	font-weight: 400
@@ -53,11 +68,6 @@ p
 	transition: 0.3s
 	min-height: 100vh
 	&.menu-open, &.cart-open
-		//position: fixed
-		//top: 0
-		//left: 0
-		//height: 100%
-		//width: 100%
 		&:after
 			z-index: 10
 			content: ''
