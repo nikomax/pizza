@@ -117,18 +117,28 @@
 		border-radius: 50%
 		border: 0.1rem solid #ff6c00
 		font-size: 2rem
+		.signal
+			pointer-events: none
+			position: absolute
+			height: 100%
+			width: 100%
+			top: 44%
+			left: 50%
+			transform: translate(-50%, -50%) scale(1.7)
+			&__1
+				animation: signal 0.5s infinite
+			&__2
+				animation: signal 1s infinite
+				animation-delay: 0.5s
+			&__3
+				animation: signal 1.5s infinite
+				animation-delay: 1s
 		.icon
 			fill: #ff6c00
 			position: absolute
 			top: 50%
 			left: 55%
 			transform: translate(-50%, -50%)
-		img
-			position: absolute
-			top: 50%
-			left: 50%
-			transform: translate(-50%, -50%)
-			height: 100%
 	&__loyalty
 		position: absolute
 		right: 6.8rem
@@ -145,3 +155,11 @@
 		&.is-stopped
 			+regular
 			color: #ff0000
+
+@keyframes signal
+	from
+		opacity: 1
+	50%
+		opacity: 0
+	to
+		opacity: 1

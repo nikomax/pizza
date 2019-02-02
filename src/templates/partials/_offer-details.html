@@ -1,0 +1,227 @@
+<main class="main">
+  <div class="container">
+    <div class="item-details">
+      <div class="item-details__variant">
+        <span class="bonuses js-bonuses">Shop</span>
+        <span class="bonuses is-hidden js-bonuses-revert">Delivery</span>
+      </div>
+      {% if 3hrOffer %}
+        <div class="item-details__offer-time item-details__offer-time--green">2 hr : 34 mins</div>
+      {% elseif 4TodayOffer %}
+        <div class="item-details__offer-time item-details__offer-time--rose">2 hr : 34 mins</div>
+      {% else %}
+        <div class="item-details__offer-time">Available All Time</div>
+      {% endif %}
+      <div class="item-details-offer">
+        {% if 3hrOffer %}
+          <div class="item-details-offer-title item-details-offer-title--green"><sup>*</sup>3 Hr Offer</div>
+        {% elseif 4TodayOffer %}
+          <div class="item-details-offer-title item-details-offer-title--rose"><sup>*</sup>Just 4 Today</div>
+        {% else %}
+          <div class="item-details-offer-title"><sup>*</sup>Daily Offer 25</div>
+        {% endif %}
+        <div class="item-details-offer__price">
+          <div class="price-box">£ 4.65</div>
+        </div>
+      </div>
+      <div class="item-banner item-banner--offer">
+        <div class="item-banner__feedback">
+          <a href="#" class="feedback-link">
+            <span class="feedback-link__stars">
+              {{mixins.icon('star')}}
+              {{mixins.icon('star')}}
+              {{mixins.icon('star')}}
+              {{mixins.icon('star')}}
+              {{mixins.icon('star')}}
+            </span>
+            <span class="feedback-link__text">FEED BACK</span>
+          </a>
+        </div>
+        <div class="item-banner__right-links">
+          {% if 3hrOffer %}
+            <a href="#" class="vertical-link vertical-link--rose">Just2</a>
+            <a href="#" class="vertical-link vertical-link--orange">daily</a>
+          {% elseif 4TodayOffer %}
+            <a href="#" class="vertical-link vertical-link--green">3HOUR</a>
+            <a href="#" class="vertical-link vertical-link--orange">daily</a>
+          {% else %}
+            <a href="#" class="vertical-link vertical-link--green">3HOUR</a>
+            <a href="#" class="vertical-link vertical-link--rose">Just2</a>
+          {% endif %}
+        </div>
+        <div class="item-banner__container">
+          <div class="item-banner__pole"></div>
+          <div class="item-banner__slider js-slider">
+            <div class="item-banner__slide">
+              <a href="#" class="item-banner__image">
+                <img src="img/dish.png" alt="Food">
+                <span class="item-banner__image-label">Not Available</span>
+              </a>
+            </div>
+            <div class="item-banner__slide">
+              <a href="#" class="item-banner__image">
+                <img src="img/dish.png" alt="Food">
+                <span class="item-banner__image-label">Not Available</span>
+              </a>
+            </div>
+            <div class="item-banner__slide">
+              <a href="#" class="item-banner__image">
+                <img src="img/dish.png" alt="Food">
+                <span class="item-banner__image-label">Not Available</span>
+              </a>
+            </div>
+            <div class="item-banner__slide">
+              <a href="#" class="item-banner__image">
+                <img src="img/dish.png" alt="Food">
+                <span class="item-banner__image-label">Not Available</span>
+              </a>
+            </div>
+            <div class="item-banner__slide">
+              <a href="#" class="item-banner__image">
+                <img src="img/dish.png" alt="Food">
+                <span class="item-banner__image-label">Not Available</span>
+              </a>
+            </div>
+            <div class="item-banner__slide">
+              <a href="#" class="item-banner__image">
+                <img src="img/dish.png" alt="Food">
+                <span class="item-banner__image-label">Not Available</span>
+              </a>
+            </div>
+            <div class="item-banner__slide">
+              <a href="#" class="item-banner__image">
+                <img src="img/dish.png" alt="Food">
+                <span class="item-banner__image-label">Not Available</span>
+              </a>
+            </div>
+            <div class="item-banner__slide">
+              <a href="#" class="item-banner__image">
+                <img src="img/dish.png" alt="Food">
+                <span class="item-banner__image-label">Not Available</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item-details__loyalty js-bonuses bonuses-hide">
+        <div class="bonus-earn">
+          <div class="bonus-earn__icon">{{mixins.icon('crown')}}</div>
+          <div class="bonus-earn__value">Earn 10 pts</div>
+        </div>
+        <div class="bonus-pay">Pay With 100 pts</div>
+      </div>
+      <div class="align-right">
+        <a href="#" class="allergen-link">Allergens !</a>
+      </div>
+      {% if 3hrOffer %}
+        <div class="item-details-offer-title item-details-offer-title--green">3 Hr Offer</div>
+      {% elseif 4TodayOffer %}
+        <div class="item-details-offer-title item-details-offer-title--rose">Just 4 Today</div>
+      {% else %}
+        <div class="item-details-offer-title">Daily Offer 25</div>
+      {% endif %}
+      <div class="item-details__desc">
+        <p>Prawn with Cheese & Sauce in Stoupid Casing.</p>
+        <p>Any Flavour Milk 500 ml Quinkee Any Flavour Milk</p>
+        <p>3rd line of description text 3rd line of description</p>
+      </div>
+      <div class="quantity">
+        <div class="quantity__title">More:</div>
+        <div class="quantity__content">
+          <div class="quantity__text">Quantity</div>
+          <div class="quantity__count">2</div>
+          <div class="quantity__buttons">
+            <button class="quantity__button">{{mixins.icon('minus')}}</button>
+            <button class="quantity__button quantity__button--plus">{{mixins.icon('plus')}}</button>
+          </div>
+        </div>
+      </div>
+      <div class="main__buttons main__buttons--center">
+        <a href="#" class="btn btn--violet btn--sm">Order Options</a>
+      </div>
+      <div class="loyalty-bank">
+        <div class="loyalty-bank__icon">{{mixins.icon('crown')}}</div>
+        <div class="loyalty-bank__count">450</div>
+        <div class="loyalty-bank__text">Points In Loyalty Bank</div>
+      </div>
+      <div class="total">
+        <div class="total__items js-variant">
+          <div class="total__item total-item">
+            <div class="total-item__title">Only In Shop-Visit Jingou In Person</div>
+            <div class="total-item__content">
+              <div class="total-item__top">
+                <div class="total-item__icon">
+                  <img src="img/shop.png" alt="Shop">
+                </div>
+                <div class="total-item__info">Earn 20 pts</div>
+                <div class="total-item__info total-item__info--blue">Pay With 200 pts</div>
+                <div class="total-item__swipe">
+                  <img src="img/swipe-left.png" alt="swipe">
+                </div>
+              </div>
+              <div class="total-item__bottom">
+                <div class="total-item__count">2</div>
+                <div class="total-item__food">Stoupid Prawn</div>
+                <div class="total-item__cost">Total Cost £9.30</div>
+              </div>
+            </div>
+          </div>
+          <div class="total__item total-item">
+            <div class="total-item__title">Valid For Home Delivery</div>
+            <div class="total-item__content">
+              <div class="total-item__top">
+                <div class="total-item__swipe">
+                  <img src="img/swipe-right.png" alt="swipe">
+                </div>
+                <div class="total-item__info total-item__info--yellow">No Loyalty Points for Delivery</div>
+                <div class="total-item__icon">
+                  <img src="img/bike.png" alt="Bike">
+                </div>
+              </div>
+              <div class="total-item__bottom">
+                <div class="total-item__count">2</div>
+                <div class="total-item__food">Stoupid Prawn</div>
+                <div class="total-item__cost">Total Cost £9.30</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main__buttons main__buttons--sm main__buttons--center">
+        <a href="#" class="btn btn--sm btn--rainbow">Add & Continue</a>
+      </div>
+      <div class="main__buttons main__buttons--center main__buttons--sm">
+        <a href="#" class="btn btn--sm">Add To Cart</a>
+        <a href="#" class="btn btn--sm btn--blue js-bonuses bonuses">Pay With Pts</a>
+      </div>
+      <p class="addition-info">*Conditions Apply</p>
+    </div>
+    {% include "./_fixed-menu.html" %}
+  </div>
+  <div class="s-popup js-popup {% if itemDetailsOrderModal %}is-active{% endif %}">
+    <div class="s-popup__inner s-popup__inner--add-order">
+      <button class="s-popup__close js-popup-close">X</button>
+      <p>Order Added</p>
+      <p>Continue with adding to the Order</p>
+    </div>
+  </div>
+  <div class="s-popup js-popup {% if itemDetailsWarningModal %}is-active{% endif %}">
+    <div class="s-popup__inner s-popup__inner--choose">
+      <button class="s-popup__close js-popup-close">X</button>
+      <div class="choose">
+        <div class="choose__icon">
+          <img src="img/warning.png" alt="Warning">
+        </div>
+        <div class="choose__title">Choose Shop Or Delivery</div>
+        <div class="choose__text">
+          Please choose the shop part of menu. This will entil you to Loyalty Points. If you want the items to be
+          delivered choose Delivery
+        </div>
+        <div class="choose__buttons">
+          <a href="#" class="btn btn--sm btn--green-grad">In Shop</a>
+          <a href="#" class="btn btn--sm btn--red-grad">Deliver</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

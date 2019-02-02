@@ -43,3 +43,9 @@ PageList:
   ready: 50
 - file: item-details-warning.html
   ready: 50
+- file: daily-offer.html
+  ready: 50
+- file: 3hr-offer.html
+  ready: 50
+- file: just-4-today-offer.html
+  ready: 50

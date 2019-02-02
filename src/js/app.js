@@ -1,6 +1,7 @@
 import './components/item-modal'
 import './components/popup'
 import './components/accordion'
+import './components/sliders'
 
 const fixedMenuBtn = $('.js-fixed-menu-btn');
 const burgerBtn = $('.js-burger');
