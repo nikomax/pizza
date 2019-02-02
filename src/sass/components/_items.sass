@@ -112,7 +112,7 @@
 	position: relative
 	&__slider
 		+coverdiv
-		height: 80%
+		height: 83%
 		div
 			height: 100%
 		.slick-dots
@@ -186,6 +186,8 @@
 		position: absolute
 		top: 2rem
 		right: -2rem
+		animation: fromRight 1.5s
+		animation-fill-mode: forwards
 		.vertical-link
 			border-radius: 0.4rem 0 0 0.4rem
 			border-width: 0.15rem 0 0.15rem 0.15rem
@@ -196,6 +198,8 @@
 		position: absolute
 		top: -7rem
 		right: -2rem
+		animation: fromRight 1.5s
+		animation-fill-mode: forwards
 		.vertical-link
 			border-radius: 0.4rem 0 0 0.4rem
 			border-width: 0.15rem 0 0.15rem 0.15rem
@@ -213,6 +217,11 @@
 		#{$this}__image
 			padding: 0
 
+@keyframes fromRight
+	from
+		transform: translateX(100%)
+	to
+		transform: translateX(0)
 
 @keyframes flagToTop
 	to
@@ -232,6 +241,7 @@
 			align-self: center
 	&__variant
 		font-size: 1.95rem
+		margin-top: -1.5rem
 		margin-bottom: 0.5rem
 	&__title
 		+semi
@@ -418,7 +428,7 @@
 	color: #ff6c00
 	text-shadow: 0.2rem 0.2rem 3px rgba(0, 0, 0, 0.4)
 	-webkit-text-fill-color: #ff6c00
-	-webkit-text-stroke: 0.05rem white
+	-webkit-text-stroke: 0.02rem white
 	sup
 		vertical-align: top
 		color: black

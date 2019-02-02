@@ -14,7 +14,7 @@
 	border: 0.1rem solid #000
 	border-radius: 0.5rem
 	padding: 2rem 0.5rem 2rem 0.8rem
-	box-shadow: 0.1rem 0.2rem 10px 0 rgba(0, 0, 0, 0.4)
+	box-shadow: 0.1rem 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.4)
 	&__content
 		position: relative
 		flex-grow: 1
@@ -48,19 +48,19 @@
 		justify-content: center
 		border-radius: 50%
 		background-color: red
-		box-shadow: 0 0.3rem 2rem 2.7px rgba(0, 0, 0, 0.75)
+		box-shadow: 0.2rem 0.2rem 1.8rem 0.2rem rgba(0, 0, 0, 0.75)
 		color: #fff
 		text-shadow: 0.2rem 0.2rem 3px rgba(0, 0, 0, 0.4)
 	&__title
 		margin-bottom: 1.4rem
-		padding-right: 5rem
+		padding-right: 4rem
 		text-align: center
 		+semi
 		font-size: 4.02rem
 		color: red
 		text-shadow: 0.2rem 0.2rem 3px rgba(0, 0, 0, 0.4)
 		-webkit-text-fill-color: red
-		-webkit-text-stroke: 0.05rem white
+		-webkit-text-stroke: 0.02rem white
 	&__time
 		+bold-italic
 		color: red
@@ -83,10 +83,33 @@
 			color: #ff00d8
 	&--green
 		#{$this}__value
-			background-color: #00ad21
+			background-color: #36ff00
 		#{$this}__title
-			color: #00ad21
-			-webkit-text-fill-color: #00ad21
+			color: #36ff00
+			-webkit-text-fill-color: #36ff00
 		#{$this}__time
-			color: #00ad21
+			color: #36ff00
 
+.title-curtains
+	position: relative
+	&:before, &:after
+		z-index: 8
+		animation: scaleX 3s
+		//animation-fill-mode: forwards
+		content: ''
+		position: absolute
+		top: 0
+		height: 103%
+		width: 50%
+		background-color: #fff
+		transform: scaleX(0)
+	&:before
+		left: 0
+		transform-origin: 0 100%
+	&:after
+		right: 0
+		transform-origin: 100% 100%
+
+@keyframes scaleX
+	from
+		transform: scaleX(1)
