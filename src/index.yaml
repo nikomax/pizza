@@ -49,3 +49,11 @@ PageList:
   ready: 50
 - file: just-4-today-offer.html
   ready: 50
+#- file: notification.html
+#  ready: 50
+#- file: summary-points.html
+#  ready: 50
+#- file: error-message.html
+#  ready: 50
+#- file: faq.html
+#  ready: 50

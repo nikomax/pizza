@@ -1,0 +1,42 @@
+---
+title: JinGou
+
+headerBack: true
+
+contentList: [
+  {
+    text: 'Loyalty',
+    icon: 'icon-loyalty.png'
+  },{
+    text: 'Notification',
+    icon: 'icon-notification.png'
+  },{
+    text: 'Menu',
+    icon: 'icon-menu.png'
+  },{
+    text: 'Cart',
+    icon: 'icon-cart.png'
+  },{
+    text: 'Offers',
+    icon: 'icon-offers.png'
+  }
+]
+
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+  <div class="app js-app">
+    {% include "partials/_header.html" %}
+    {% include "partials/_cart.html" %}
+    <div class="s-popup js-popup is-active">
+      <div class="s-popup__inner s-popup__inner--error-message">
+        <p>Sorry You Have <br>Insuffcient Points </p>
+        <div class="align-right">
+          <button class="js-popup-close s-popup__ok-btn">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

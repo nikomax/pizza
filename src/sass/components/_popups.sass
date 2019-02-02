@@ -28,13 +28,25 @@
 			font-size: 2.7rem
 			color: #fc0000
 			line-height: 2
+		&--error-message
+			font-size: 2.4rem
+			text-align: center
+			+semi
+			padding: 3rem 2rem 1rem
+			line-height: 2
 	&__close
+		+semi
 		text-decoration: none
 		position: absolute
 		top: 1rem
 		right: 1.5rem
 		background-color: transparent
 		font-size: 1.8rem
+	&__ok-btn
+		font-size: inherit
+		background-color: transparent
+		color: #0090ec
+		line-height: 1
 	&.is-active
 		display: block
 

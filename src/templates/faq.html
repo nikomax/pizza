@@ -1,0 +1,60 @@
+---
+title: JinGou
+
+headerBack: true
+
+faq: [
+  {
+    title: 'Contrary to popular belief ?',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error esse explicabo facilis, libero magnam modi neque quae sint soluta.'
+  },{
+    title: 'Contrary to popular belief ?',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error esse explicabo facilis, libero magnam modi neque quae sint soluta.'
+  },{
+    title: 'Contrary to popular belief ?',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error esse explicabo facilis, libero magnam modi neque quae sint soluta.'
+  },{
+    title: 'Contrary to popular belief ?',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error esse explicabo facilis, libero magnam modi neque quae sint soluta.'
+  },{
+    title: 'Contrary to popular belief ?',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error esse explicabo facilis, libero magnam modi neque quae sint soluta.'
+  },{
+    title: 'Contrary to popular belief ?',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error esse explicabo facilis, libero magnam modi neque quae sint soluta.'
+  },{
+    title: 'Contrary to popular belief ?',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error esse explicabo facilis, libero magnam modi neque quae sint soluta.'
+  }
+]
+
+contentList: [
+  {
+    text: 'Loyalty',
+    icon: 'icon-loyalty.png'
+  },{
+    text: 'Notification',
+    icon: 'icon-notification.png'
+  },{
+    text: 'Menu',
+    icon: 'icon-menu.png'
+  },{
+    text: 'Cart',
+    icon: 'icon-cart.png'
+  },{
+    text: 'Offers',
+    icon: 'icon-offers.png'
+  }
+]
+
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+  <div class="app js-app">
+    {% include "partials/_header.html" %}
+    {% include "partials/_faq.html" %}
+    {% include "partials/_cart.html" %}
+  </div>
+
+{% endblock %}

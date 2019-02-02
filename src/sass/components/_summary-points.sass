@@ -1,0 +1,49 @@
+.summary-total
+	display: flex
+	align-items: flex-end
+	justify-content: space-between
+	margin: 2rem 0 2.2rem
+	&__text
+		font-size: 1.95rem
+		text-transform: uppercase
+		+semi
+	&__value
+		+semi
+		font-size: 6.45rem
+		line-height: 1
+		color: #ff6c00
+		-webkit-text-fill-color: #ff6c00
+		-webkit-text-stroke: 0.05rem black
+
+.summary-table
+	margin: 0 -2rem
+	+semi
+	text-transform: uppercase
+	.icon
+		vertical-align: middle
+	.icon-plus
+		fill: #27d02f
+		font-size: 1rem
+	.icon-minus
+		font-size: 0.25rem
+		fill: #ff0006
+	&__row
+		padding: 1.8rem 0
+		display: flex
+		&:first-child
+			font-size: 1.35rem
+			color: #606060
+			background-color: #d9d9d9
+		&:not(:first-child)
+			border-bottom: 1px solid #d9d9d9
+	&__col
+		text-align: center
+		padding: 0 0.1rem
+		&:nth-child(1)
+			width: 23%
+		&:nth-child(2)
+			width: 33%
+		&:nth-child(3)
+			width: 15%
+		&:nth-child(4)
+			width: 29%
