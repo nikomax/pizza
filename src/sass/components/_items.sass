@@ -119,7 +119,7 @@
 		padding-top: 47.5%
 	&__pole
 		position: absolute
-		top: 0.7rem
+		top: 2rem
 		left: 4.5rem
 		width: 0.5rem
 		height: 83%
@@ -152,7 +152,10 @@
 	&__feedback
 		z-index: 1
 		position: absolute
-		top: 1.9rem
+		//top: 3rem
+		animation: flagToTop 2s
+		animation-fill-mode: forwards
+		top: 70%
 		left: -2rem
 		.feedback-link
 			border-radius: 0 0.4rem 0.4rem 0
@@ -170,6 +173,12 @@
 		bottom: 0
 		right: 0.2rem
 		font-size: 3.6rem
+
+@keyframes flagToTop
+	to
+		top: 3rem
+
+
 
 .item-details
 	&__loyalty
@@ -289,18 +298,20 @@
 	&__button
 		background-color: #d1d0d0
 		position: relative
-		font-size: 3rem
 		height: 4rem
 		width: 4rem
 		border-radius: 50%
 		margin-left: 2rem
-		span
+		.icon
+			font-size: 0.5rem
 			position: absolute
 			left: 50%
-			top: 40%
+			top: 50%
 			transform: translate(-50%, -50%)
 		&--plus
-			color: red
+			.icon
+				font-size: 2rem
+				fill: red
 
 .loyalty-bank
 	display: flex

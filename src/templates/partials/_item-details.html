@@ -9,11 +9,11 @@
         <div class="item-banner__feedback">
           <a href="#" class="feedback-link">
             <span class="feedback-link__stars">
-              <img src="img/star.png" alt="star">
-              <img src="img/star.png" alt="star">
-              <img src="img/star.png" alt="star">
-              <img src="img/star.png" alt="star">
-              <img src="img/star.png" alt="star">
+              {{mixins.icon('star')}}
+              {{mixins.icon('star')}}
+              {{mixins.icon('star')}}
+              {{mixins.icon('star')}}
+              {{mixins.icon('star')}}
             </span>
             <span class="feedback-link__text">FEED BACK</span>
           </a>
@@ -54,8 +54,8 @@
           <div class="quantity__text">Quantity</div>
           <div class="quantity__count">2</div>
           <div class="quantity__buttons">
-            <button class="quantity__button"><span>-</span></button>
-            <button class="quantity__button quantity__button--plus"><span>+</span></button>
+            <button class="quantity__button">{{mixins.icon('minus')}}</button>
+            <button class="quantity__button quantity__button--plus">{{mixins.icon('plus')}}</button>
           </div>
         </div>
       </div>

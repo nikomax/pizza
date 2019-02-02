@@ -27,6 +27,8 @@ PageList:
   ready: 50
 - file: review-write.html
   ready: 50
+- file: review-write-thank.html
+  ready: 50
 - file: open-delivery-times.html
   ready: 50
 - file: submenu.html

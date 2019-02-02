@@ -1,3 +1,19 @@
+.review-page
+	+coverdiv
+	padding: 10rem 1rem 0
+	display: flex
+	flex-direction: column
+	.title-button
+		padding: 1rem
+
+.review-items
+	flex-grow: 1
+	position: relative
+	&__wrap
+		padding: 1rem 1rem 5rem
+		+coverdiv
+		overflow: auto
+
 .review
 	color: #353535
 	border: 1px solid #616161
@@ -23,6 +39,7 @@
 		font-size: 1.95rem
 
 .review-rates
+	padding: 1rem
 	display: flex
 	justify-content: space-between
 	&__value
@@ -60,7 +77,6 @@
 			height: 100%
 			display: block
 
-
 .stars
 	display: flex
 	&__item
@@ -73,3 +89,20 @@
 			fill: #ed8a19
 		&.is-active
 			opacity: 1
+
+.review-thank
+	margin-top: 10rem
+	box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.4)
+	border-radius: 0.5rem
+	background-color: #ADFCFF
+	padding: 1rem
+	&__title
+		text-align: center
+		font-size: 2.9rem
+		+kaushan
+		color: #5a00fe
+		margin-bottom: 5rem
+	&__link
+		text-decoration: none
+		color: black
+		font-size: 3.23rem
