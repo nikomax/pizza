@@ -1,0 +1,92 @@
+.offers
+	margin: 3rem 0
+	&__item
+		&:not(:last-child)
+			margin-bottom: 1.2rem
+			padding-bottom: 1.2rem
+			border-bottom: 1px solid #cccccc
+
+.offer-item
+	$this: &
+	text-decoration: none
+	color: inherit
+	display: flex
+	border: 0.1rem solid #000
+	border-radius: 0.5rem
+	padding: 2rem 0.5rem 2rem 0.8rem
+	box-shadow: 0.1rem 0.2rem 10px 0 rgba(0, 0, 0, 0.4)
+	&__content
+		position: relative
+		flex-grow: 1
+	&__button
+		height: 4rem
+		width: 4rem
+		min-width: 4rem
+		border-radius: 50%
+		border: 0.12rem solid #ff6c00
+		font-size: 2rem
+		margin-left: 2rem
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		right: 1rem
+		.icon
+			fill: #ff6c00
+			position: absolute
+			top: 50%
+			left: 55%
+			transform: translate(-50%, -50%)
+	&__value
+		margin-right: 1rem
+		+semi
+		font-size: 4.02rem
+		height: 6.4rem
+		width: 6.4rem
+		min-width: 6.4rem
+		display: flex
+		align-items: center
+		justify-content: center
+		border-radius: 50%
+		background-color: red
+		box-shadow: 0 0.3rem 2rem 2.7px rgba(0, 0, 0, 0.75)
+		color: #fff
+		text-shadow: 0.2rem 0.2rem 3px rgba(0, 0, 0, 0.4)
+	&__title
+		margin-bottom: 1.4rem
+		padding-right: 5rem
+		text-align: center
+		+semi
+		font-size: 4.02rem
+		color: red
+		text-shadow: 0.2rem 0.2rem 3px rgba(0, 0, 0, 0.4)
+		-webkit-text-fill-color: red
+		-webkit-text-stroke: 0.05rem white
+	&__time
+		+bold-italic
+		color: red
+		font-size: 2.4rem
+		margin-bottom: 1.3rem
+	&__loyalty
+		.bonus-earn
+			font-size: 2.4rem
+			&__icon
+				margin-right: 1.7rem
+				.icon
+					font-size: 2.5rem
+	&--rose
+		#{$this}__value
+			background-color: #ff00d8
+		#{$this}__title
+			color: #ff00d8
+			-webkit-text-fill-color: #ff00d8
+		#{$this}__time
+			color: #ff00d8
+	&--green
+		#{$this}__value
+			background-color: #00ad21
+		#{$this}__title
+			color: #00ad21
+			-webkit-text-fill-color: #00ad21
+		#{$this}__time
+			color: #00ad21
+

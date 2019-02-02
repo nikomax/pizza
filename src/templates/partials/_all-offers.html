@@ -1,0 +1,70 @@
+<main class="main">
+  <div class="container">
+    <h2 class="title title--lg">Todays Offers</h2>
+    <div class="message">
+      <div class="message__title">Offers</div>
+      <div class="message__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+      </div>
+    </div>
+    <div class="message">
+      <div class="message__title">Loyalty Points</div>
+      <div class="message__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+      </div>
+    </div>
+    <div class="offers">
+      <div class="offers__item">
+        <a href="#" class="offer-item">
+          <div class="offer-item__value">20</div>
+          <div class="offer-item__content">
+            <div class="offer-item__title">DAILY OFFERS</div>
+            <div class="offer-item__time">Offer Available Everyday</div>
+            <div class="offer-item__loyalty">
+              <div class="bonus-earn">
+                <div class="bonus-earn__icon">{{mixins.icon('crown')}}</div>
+                <div class="bonus-earn__title">Loyalty Points</div>
+              </div>
+            </div>
+            <div class="offer-item__button">{{mixins.icon('right')}}</div>
+          </div>
+        </a>
+      </div>
+      <div class="offers__item">
+        <a href="#" class="offer-item offer-item--rose">
+          <div class="offer-item__value">3</div>
+          <div class="offer-item__content">
+            <div class="offer-item__title">JUST FOR TODAY</div>
+            <div class="offer-item__time">EXPIRES IN 9HRS:30 MINS</div>
+            <div class="offer-item__loyalty">
+              <div class="bonus-earn">
+                <div class="bonus-earn__icon">{{mixins.icon('crown')}}</div>
+                <div class="bonus-earn__title">Loyalty Points</div>
+              </div>
+            </div>
+            <div class="offer-item__button">{{mixins.icon('right')}}</div>
+          </div>
+        </a>
+      </div>
+      <div class="offers__item">
+        <a href="#" class="offer-item offer-item--green">
+          <div class="offer-item__value">1</div>
+          <div class="offer-item__content">
+            <div class="offer-item__title">3 HR OFFER</div>
+            <div class="offer-item__time">EXPIRES IN 2HRS :30 MINS</div>
+            <div class="offer-item__loyalty">
+              <div class="bonus-earn">
+                <div class="bonus-earn__icon">{{mixins.icon('crown')}}</div>
+                <div class="bonus-earn__title">Loyalty Points</div>
+              </div>
+            </div>
+            <div class="offer-item__button">{{mixins.icon('right')}}</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    {% include "./_fixed-menu.html" %}
+  </div>
+</main>

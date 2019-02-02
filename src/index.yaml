@@ -49,6 +49,8 @@ PageList:
   ready: 50
 - file: just-4-today-offer.html
   ready: 50
+- file: all-offers.html
+  ready: 50
 #- file: notification.html
 #  ready: 50
 #- file: summary-points.html
