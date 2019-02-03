@@ -2,14 +2,14 @@
   <div class="container">
     <div class="tracking">
       {% if delivered %}
-        <div class="tracking__message">
+        <div class="tracking__title tracking__title--delivered">
           <img src="img/delivered-titile.png" alt="delivered">
         </div>
         <div class="tracking__image">
           <img src="img/pack.png" alt="Jingou">
         </div>
       {% elseif finish %}
-        <div class="tracking__message">
+        <div class="tracking__title">
           <img src="img/delivered-titile.png" alt="delivered">
         </div>
         <div class="tracking__image tracking__image--finish">
@@ -23,7 +23,7 @@
             var map;
             function initMap() {
               // The location of Shop
-              var shop = {lat: 51.344, lng: 7.036};
+              var shop = {lat: 53.762161, lng: -2.681509};
               // The map, centered at Shop
               var map = new google.maps.Map(
                 document.getElementById('map'), {zoom: 15, center: shop, fullscreenControl: false});
@@ -88,11 +88,17 @@
       </div>
       {% if delivered %}
         <div class="tracking__thanks">
-          <img src="img/tracking-thanks.png" alt="Thank You">
+          <div class="thanks-delivery">
+            <img class="thanks-delivery__face" src="img/face.png" alt="Thank You">
+            <img class="thanks-delivery__text" src="img/thank-you.png" alt="Thank You">
+          </div>
         </div>
       {% elseif finish %}
         <div class="tracking__thanks tracking__thanks--finish">
-          <img src="img/tracking-thanks.png" alt="Thank You">
+          <div class="thanks-delivery">
+            <img class="thanks-delivery__face" src="img/face.png" alt="Thank You">
+            <img class="thanks-delivery__text" src="img/thank-you.png" alt="Thank You">
+          </div>
         </div>
       {% endif %}
       {% if finish %}
