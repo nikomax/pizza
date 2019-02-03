@@ -59,6 +59,8 @@ PageList:
   ready: 50
 - file: shop-or-delivery.html
   ready: 50
+- file: order-options.html
+  ready: 50
 #- file: notification.html
 #  ready: 50
 #- file: summary-points.html

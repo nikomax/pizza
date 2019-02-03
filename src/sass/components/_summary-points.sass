@@ -14,6 +14,12 @@
 		color: #ff6c00
 		-webkit-text-fill-color: #ff6c00
 		-webkit-text-stroke: 0.05rem black
+	&__btn
+		position: relative
+	&__btn-calendar
+		+coverdiv
+		z-index: 1
+		opacity: 0
 
 .summary-table
 	margin: 0 -2rem
@@ -47,3 +53,61 @@
 			width: 15%
 		&:nth-child(4)
 			width: 29%
+
+.flatpickr-calendar
+	position: fixed
+	width: 90%
+	top: 10rem!important
+	left: 50% !important
+	transform: translateX(-50%)
+	right: auto!important
+	&:after, &:before
+		content: none
+	&.open
+		max-height: 47rem
+		&.animate
+			animation: none
+	.flatpickr-days
+		width: 100%
+	.flatpickr-current-month span.cur-month
+		font-weight: normal
+	.flatpickr-weekdays
+		+semi
+	.flatpickr-months
+		position: relative
+		margin: 1rem 0
+		.flatpickr-prev-month, .flatpickr-next-month
+			svg
+				fill: #f46806
+	.flatpickr-month
+		color: #f46806
+	.dayContainer
+		width: 100%
+		min-width: 100%
+		max-width: 100%
+	.flatpickr-day
+		height: 6rem
+		max-width: 6rem
+		width: 6rem
+		line-height: 1
+		font-size: 2rem
+		display: flex
+		justify-content: center
+		align-items: center
+		&.selected
+			background: #f46806
+			border-color: #f46806
+			border-radius: 50%
+		&.startRange
+			background: #f46806
+			border-radius: 50% 0 0 50%
+		&.endRange
+			background: #f46806
+			border-radius: 0 50% 50% 0
+		&.inRange
+			border-color: #f46806
+			background: #f46806
+			box-shadow: -1rem 0 0 #f46806, 1rem 0 0 #f46806
+	.flatpickr-day.selected.startRange + .endRange:not(:nth-child(7n+1)), .flatpickr-day.startRange.startRange + .endRange:not(:nth-child(7n+1)), .flatpickr-day.endRange.startRange + .endRange:not(:nth-child(7n+1))
+		box-shadow: -1rem 0 0 #f46806, 1rem 0 0 #f46806
+
