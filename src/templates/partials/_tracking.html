@@ -1,0 +1,107 @@
+<main class="main">
+  <div class="container">
+    <div class="tracking">
+      {% if delivered %}
+        <div class="tracking__message">
+          <img src="img/delivered-titile.png" alt="delivered">
+        </div>
+        <div class="tracking__image">
+          <img src="img/pack.png" alt="Jingou">
+        </div>
+      {% elseif finish %}
+        <div class="tracking__message">
+          <img src="img/delivered-titile.png" alt="delivered">
+        </div>
+        <div class="tracking__image tracking__image--finish">
+          <img src="img/pack.png" alt="Jingou">
+        </div>
+      {% else %}
+        <div class="tracking__message">Your Order Is On Its Way</div>
+        <div class="tracking__map">
+          <div id="map"></div>
+          <script>
+            var map;
+            function initMap() {
+              // The location of Shop
+              var shop = {lat: 51.344, lng: 7.036};
+              // The map, centered at Shop
+              var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 15, center: shop, fullscreenControl: false});
+              // The marker, positioned at Shop
+              var marker = new google.maps.Marker({position: shop, map: map});
+            }
+          </script>
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXzM36uuFyrLTmOL8fgvYYZhKJYXzbc18&callback=initMap"
+                  async defer></script>
+          <!--<img src="img/map.jpg" alt="map">-->
+        </div>
+      {% endif %}
+      {% if delivered or finish %}
+        <div class="tracking__delivery-items tracking__delivery-items--center">
+          <div class="delivery-item">
+            <div class="delivery-item__icon"><img src="img/timer.png" alt="Timer"></div>
+            <div class="delivery-item__content">
+              <div class="delivery-item__title">Delivered In</div>
+              <div class="delivery-item__value">10:25 MINS</div>
+            </div>
+          </div>
+        </div>
+      {% else %}
+        <div class="tracking__delivery-items">
+          <div class="delivery-item">
+            <div class="delivery-item__icon"><img src="img/timer.png" alt="Timer"></div>
+            <div class="delivery-item__content">
+              <div class="delivery-item__title">Deliver In</div>
+              <div class="delivery-item__value">10:25 MINS</div>
+            </div>
+          </div>
+          <div class="delivery-item">
+            <div class="delivery-item__content">
+              <div class="delivery-item__title">Distance</div>
+              <div class="delivery-item__value">0,93 MILE</div>
+            </div>
+            <div class="delivery-item__icon"><img src="img/bike-black.png" alt="Bike"></div>
+          </div>
+        </div>
+      {% endif %}
+      <div class="tracking__items">
+        <div class="tracking-item">
+          <div class="tracking-item__icon">{{mixins.icon('orders')}}</div>
+          <div class="tracking-item__title">Order</div>
+          <div class="tracking-item__value">£ 6.95</div>
+        </div>
+        <div class="tracking-item">
+          <div class="tracking-item__icon">{{mixins.icon('coin')}}</div>
+          <div class="tracking-item__title">Payment</div>
+          <div class="tracking-item__value">Cash On Delivery</div>
+        </div>
+        <div class="tracking-item">
+          <div class="tracking-item__icon">{{mixins.icon('address')}}</div>
+          <div class="tracking-item__title">Address</div>
+          <div class="tracking-item__value">65 New Hall Lane Preston FR1 5NY</div>
+        </div>
+        <div class="tracking-item">
+          <div class="tracking-item__icon">{{mixins.icon('support1')}}</div>
+          <div class="tracking-item__title">Support</div>
+          <div class="tracking-item__value">Call support 07425170135</div>
+        </div>
+      </div>
+      {% if delivered %}
+        <div class="tracking__thanks">
+          <img src="img/tracking-thanks.png" alt="Thank You">
+        </div>
+      {% elseif finish %}
+        <div class="tracking__thanks tracking__thanks--finish">
+          <img src="img/tracking-thanks.png" alt="Thank You">
+        </div>
+      {% endif %}
+      {% if finish %}
+        <div class="main__buttons main__buttons--center">
+          <a href="#" class="btn">Close Page</a>
+        </div>
+      {% endif %}
+    </div>
+
+    {% include "./_fixed-menu.html" %}
+  </div>
+</main>

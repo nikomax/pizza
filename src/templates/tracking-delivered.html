@@ -1,6 +1,8 @@
 ---
 title: JinGou
 
+delivered: true
+
 contentList: [
   {
     text: 'Loyalty',
@@ -24,11 +26,11 @@ contentList: [
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
-  <div class="app js-app">
-    {% include "partials/_header.html" %}
-    {% include "partials/_allergen.html" %}
-    {% include "partials/_cart.html" %}
-    {% include "partials/_sidebar.html" %}
-  </div>
+    <div class="app js-app">
+      {% include "partials/_header.html" %}
+      {% include "partials/_tracking.html" %}
+      {% include "partials/_cart.html" %}
+      {% include "partials/_sidebar.html" %}
+    </div>
 
 {% endblock %}

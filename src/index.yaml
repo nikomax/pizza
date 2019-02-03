@@ -51,6 +51,14 @@ PageList:
   ready: 50
 - file: all-offers.html
   ready: 50
+- file: tracking.html
+  ready: 50
+- file: tracking-delivered.html
+  ready: 50
+- file: tracking-finish.html
+  ready: 50
+#- file: shop-or-delivery.html
+#  ready: 50
 #- file: notification.html
 #  ready: 50
 #- file: summary-points.html
