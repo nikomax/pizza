@@ -1,0 +1,104 @@
+.order-options-page
+	position: relative
+
+.t-modal
+	display: none
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	background-color: rgba(255, 255, 255, 0.75)
+	box-shadow: 0.1rem 0.2rem 0.3rem 0.1rem rgba(0, 0, 0, 0.75)
+	padding: 5rem
+	&__content
+		text-align: center
+	&__close
+		+semi
+		text-decoration: none
+		position: absolute
+		top: 1rem
+		right: 1.5rem
+		background-color: transparent
+		font-size: 1.8rem
+	&.is-active
+		display: block
+
+.red-yellow-title
+	font-size: 3.65rem
+	+semi
+	color: #f0ff00
+	text-shadow: 0.2rem 0.2rem 3px rgba(0, 0, 0, 0.4)
+	-webkit-text-fill-color: #f0ff00
+	-webkit-text-stroke: 0.1rem red
+
+
+.title-order
+	font-size: 2.9rem
+	text-align: center
+	margin: 0rem 0 2.7rem
+
+.order-option
+	margin: 1rem 0
+	$this: &
+	&__box
+		margin-top: 0.2rem
+		border: 0.15rem solid #000000
+		border-radius: 0.5rem
+	&--green
+		#{$this}__box
+			border-color: #0fce00
+	&--red
+		#{$this}__box
+			border-color: red
+	&--blue
+		#{$this}__box
+			border-color: #2400fe
+
+.order-option-title
+	padding-bottom: 0.3rem
+	display: flex
+	font-size: 2.4rem
+	border-bottom: 1px solid #cccccc
+	&__text
+		flex-grow: 1
+	&__addition
+		width: 46%
+		text-align: center
+	&__arrow
+		width: 5%
+		.icon
+			font-size: 1.4rem
+
+.order-option-item
+	display: flex
+	padding: 0.5rem 1rem
+	font-size: 2.4rem
+	&__title
+		+italic
+		flex-grow: 1
+		&--semi
+			+semi
+	&__value
+		justify-content: space-between
+		+raleway
+		display: flex
+		align-items: center
+		width: 30%
+		span
+			margin-left: 3rem
+
+.y-box
+	display: flex
+	align-items: center
+	justify-content: space-between
+	width: 80%
+	margin: 2.6rem auto
+	font-size: 2.9rem
+	background-color: #fff200
+	padding: 0.2rem 3.3rem 0.8rem 2.1rem
+	box-shadow: 0.2rem 0.2rem 0.2rem 0px rgba(0, 0, 0, 0.75)
+	&__price
+		+raleway
+
+
+

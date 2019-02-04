@@ -1,25 +1,157 @@
 <main class="main">
   <div class="container">
-    <div class="message">
-      <div class="message__title">Order Options</div>
-      <div class="message__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    <div class="order-options-page">
+      <div class="t-modal is-active js-popup">
+        <button class="t-modal__close js-popup-close">X</button>
+        <div class="t-modal__content">
+          <div class="red-yellow-title">Daily Offer 23</div>
+        </div>
       </div>
-    </div>
-    <div class="align-right">
-      <a href="./allergen.html" class="allergen-link">Allergens !</a>
-    </div>
-    <div class="title">QUANTITY 2</div>
-    <form action="">
-
-
-
-
-      <div class="main__buttons">
-        <a href="#" class="btn btn--white">Cancel</a>
-        <button type="submit" class="btn">Add To Order</button>
+      <div class="message">
+        <div class="message__title">Order Options</div>
+        <div class="message__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+        </div>
       </div>
-    </form>
+      <div class="align-right">
+        <a href="./allergen.html" class="allergen-link">Allergens !</a>
+      </div>
+      <div class="title-order">QUANTITY 2</div>
+      <form action="">
+        <div class="quantity quantity--no-border">
+          <div class="quantity__content">
+            <div class="quantity__text">Modify Num</div>
+            <div class="quantity__count">2</div>
+            <div class="quantity__buttons">
+              <button class="quantity__button">{{mixins.icon('minus')}}</button>
+              <button class="quantity__button quantity__button--plus">{{mixins.icon('plus')}}</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-option order-option--blue accordion js-accordion">
+          <div class="order-option-title js-accordion-link">
+            <div class="order-option-title__text blue-text">Add On</div>
+            <i class="order-option-title__addition">Free</i>
+            <div class="order-option-title__arrow">{{mixins.icon('bottom')}}</div>
+          </div>
+          <div class="order-option__box accordion__content js-accordion-content">
+            <div class="order-option-item">
+              <div class="order-option-item__title">Lettuce 025/ptn</div>
+            </div>
+            <div class="order-option-item">
+              <div class="order-option-item__title">
+                <div class="quantity quantity--no-border">
+                  <div class="quantity__content">
+                    <div class="quantity__text blue-text">Qty</div>
+                    <div class="quantity__count">2</div>
+                    <div class="quantity__buttons">
+                      <button class="quantity__button">{{mixins.icon('minus')}}</button>
+                      <button class="quantity__button quantity__button--plus">{{mixins.icon('plus')}}</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="order-option-item__value">
+                <span></span>
+                <span>£ 5.00</span>
+              </div>
+            </div>
+            <div class="order-option-item">
+              <div class="order-option-item__title">Tomato Sauce Free</div>
+            </div>
+            <div class="order-option-item">
+              <div class="order-option-item__title order-option-item__title--semi blue-text">Yes</div>
+              <div class="order-option-item__value">
+                <div class="check">
+                  <input type="checkbox" name="Tomato" id="Tomato" checked>
+                  <label class="check__label" for="Tomato">{{mixins.icon('check')}}</label>
+                </div>
+                <span>£ 0.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-option order-option--red accordion js-accordion">
+          <div class="order-option-title js-accordion-link">
+            <div class="order-option-title__text red-text">Remove</div>
+            <div class="order-option-title__arrow">{{mixins.icon('bottom')}}</div>
+          </div>
+          <div class="order-option__box accordion__content js-accordion-content">
+            <div class="order-option-item">
+              <div class="order-option-item__title">Cucumber</div>
+              <div class="order-option-item__value">
+                <div class="check">
+                  <input type="checkbox" name="remove" id="Cucumber">
+                  <label class="check__label" for="Cucumber">{{mixins.icon('check')}}</label>
+                </div>
+              </div>
+            </div>
+            <div class="order-option-item">
+              <div class="order-option-item__title">Mayo</div>
+              <div class="order-option-item__value">
+                <div class="check">
+                  <input type="checkbox" name="remove" id="Mayo">
+                  <label class="check__label" for="Mayo">{{mixins.icon('check')}}</label>
+                </div>
+              </div>
+            </div>
+            <div class="order-option-item">
+              <div class="order-option-item__title">Gerkin</div>
+              <div class="order-option-item__value">
+                <div class="check">
+                  <input type="checkbox" name="remove" id="Gerkin">
+                  <label class="check__label" for="Gerkin">{{mixins.icon('check')}}</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-option order-option--green accordion js-accordion">
+          <div class="order-option-title js-accordion-link">
+            <div class="order-option-title__text green-text">Size</div>
+            <div class="order-option-title__addition rose-text">Choose One</div>
+            <div class="order-option-title__arrow">{{mixins.icon('bottom')}}</div>
+          </div>
+          <div class="order-option__box accordion__content js-accordion-content">
+            <div class="order-option-item">
+              <div class="order-option-item__title">500 ml Glass</div>
+              <div class="order-option-item__value">
+                <div class="check">
+                  <input type="radio" name="size" id="Ml500">
+                  <label class="check__label" for="Ml500">{{mixins.icon('check')}}</label>
+                </div>
+                <span>£ 0.50</span>
+              </div>
+            </div>
+            <div class="order-option-item">
+              <div class="order-option-item__title">700 ml Glass</div>
+              <div class="order-option-item__value">
+                <div class="check">
+                  <input type="radio" name="size" id="Ml700" checked>
+                  <label class="check__label" for="Ml700">{{mixins.icon('check')}}</label>
+                </div>
+                <span>£ 1.50</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <textarea class="shadow-textarea" rows="3" placeholder="Message To Chef"></textarea>
+
+        <div class="y-box">
+          <div class="y-box__title">Total</div>
+          <div class="y-box__price">£ 2,00</div>
+        </div>
+        <div class="main__buttons main__buttons--sm">
+          <a href="#" class="btn btn--sm btn--white">Cancel</a>
+          <button type="submit" class="btn btn--sm">Add To Order</button>
+        </div>
+      </form>
+    </div>
     {% include "./_fixed-menu.html" %}
   </div>
 </main>
