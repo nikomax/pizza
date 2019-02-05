@@ -40,14 +40,14 @@ function goToNextInput(e) {
     t = $(e.target),
     sib = t.next('input');
 
-  if (key !== 9 && (key < 48 || key > 57)) {
-    e.preventDefault();
-    return false;
-  }
-
-  if (key === 9) {
-    return true;
-  }
+  // if (key !== 9 && (key < 48 || key > 57)) {
+  //   e.preventDefault();
+  //   return false;
+  // }
+  //
+  // if (key === 9) {
+  //   return true;
+  // }
 
   if (!sib || !sib.length) {
     sib = verification.find('input').eq(0);
@@ -55,23 +55,23 @@ function goToNextInput(e) {
   sib.select().focus();
 }
 
-function onKeyDown(e) {
-  var key = e.which;
-
-  if (key === 9 || (key >= 48 && key <= 57)) {
-    return true;
-  }
-
-  e.preventDefault();
-  return false;
-}
+// function onKeyDown(e) {
+//   var key = e.which;
+//
+//   if (key === 9 || (key >= 48 && key <= 57)) {
+//     return true;
+//   }
+//
+//   e.preventDefault();
+//   return false;
+// }
 
 function onFocus(e) {
   $(e.target).select();
 }
 
 verification.on('keyup', 'input', goToNextInput);
-verification.on('keydown', 'input', onKeyDown);
+// verification.on('keydown', 'input', onKeyDown);
 verification.on('click', 'input', onFocus);
 
 const bonuses = $('.js-bonuses');

@@ -80,3 +80,175 @@
 		left: 50%
 		top: 4rem
 		transform: translateX(-50%)
+
+.loyalty-pts
+	font-size: 2.4rem
+	+semi
+	text-align: center
+	margin-top: 0.5rem
+
+.chart
+	height: 26rem
+	width: 26rem
+	margin: 2rem auto
+	position: relative
+	&__center
+		text-align: center
+		+vcenter
+		color: #393939
+		font-size: 3.5rem
+	&__title
+		z-index: -1
+		position: relative
+		margin-bottom: -3.5rem
+		font-size: 3.7rem
+		+semi
+		color: black
+		-webkit-text-fill-color: black
+		-webkit-text-stroke: 0.04rem white
+		.icon
+			fill: #0078ff
+			font-size: 9rem
+		span
+			position: absolute
+			top: 60%
+			left: 50%
+			transform: translate(-50%, -50%)
+	&__value
+		color: black
+		-webkit-text-fill-color: black
+		-webkit-text-stroke: 0.07rem white
+		+semi
+		font-size: 7.3rem
+
+.progress
+	transform: rotate(-90deg)
+	height: 100%
+	width: 100%
+	&__value
+		stroke-linecap: round
+	&__meter, &__value
+		fill: none
+	&__meter
+		stroke: #dadada
+
+.points
+	background-color: #FFFFFF
+	position: relative
+	padding: 1rem
+	border: 0.5rem solid black
+	&__title
+		+semi
+		font-size: 2.25rem
+		text-transform: uppercase
+	&__time
+		+semi
+		font-size: 1.95rem
+	&__items
+		margin: 1.6rem 0
+	&__buttons
+		display: flex
+		justify-content: space-between
+		margin: 4rem 1rem
+		&--center
+			justify-content: center
+	&__total
+		padding: 0 2rem
+		font-size: 2.4rem
+		+semi
+		display: flex
+		justify-content: flex-end
+		align-items: flex-end
+		border-top: 1px solid #dadada
+		border-bottom: 1px solid #dadada
+	&__total-value
+		line-height: 1
+		margin-top: -2rem
+		margin-left: 6.5rem
+		font-size: 3.6rem
+		span
+			font-size: 1.45rem
+	&__total-title
+		margin-top: -0.3rem
+	&--green-border
+		border-color: #1eff00
+	&--rose-border
+		border-color: #ff01f0
+
+.point-item
+	display: flex
+	align-items: center
+	margin: 1rem 0
+	&__image
+		height: 9rem
+		min-height: 9rem
+		width: 9rem
+		border-radius: 50%
+		overflow: hidden
+		background-color: #464646
+		margin-right: 1rem
+		img
+			height: 100%
+			width: 100%
+			object-fit: cover
+	&__title
+		flex-grow: 1
+		+italic
+		font-size: 1.8rem
+		color: #434343
+	&__count
+		+semi
+		font-size: 1.8rem
+		margin: 0 2rem
+	&__delete
+		background-color: transparent
+		font-size: 3rem
+		fill: #434343
+		.icon
+			display: block
+
+.points-text
+	margin: 5rem 0 3rem
+	+semi
+	&__title
+		margin-bottom: 1rem
+		font-size: 2.4rem
+	&__text
+		padding: 0 1.5rem
+		text-align: center
+		line-height: 1.5
+		font-size: 1.45rem
+
+.points-validation
+	margin-bottom: 1rem
+	padding: 1rem
+	background-color: #FFFFFF
+	&__title
+		+semi
+		font-size: 1.95rem
+		text-align: center
+		margin-bottom: 1rem
+	&__inputs
+		padding: 0 1rem
+		display: flex
+		justify-content: space-between
+		input
+			text-transform: uppercase
+			padding: 0.5rem
+			vertical-align: middle
+			border: 1px solid black
+			border-radius: 0.4rem
+			display: block
+			width: 19%
+			text-align: center
+			font-size: 2.9rem
+			+semi
+			+placeholder-color(#a8a8a8)
+			&:not(:last-child)
+				margin-right: 1%
+	&--green-bg
+		background-color: #1eff00
+	&--rose-bg
+		background-color: #ff01f0
+		.points-validation__title
+			color: #FFFFFF

@@ -52,3 +52,26 @@
 	&.is-active
 		display: block
 
+.modal
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	height: 100%
+	width: 100%
+	padding: 3.2rem 0.3rem
+	overflow: auto
+	&__content
+		position: relative
+		padding: 2rem
+	&__close
+		color: red
+		+semi
+		text-decoration: none
+		position: absolute
+		top: 1rem
+		right: 1.5rem
+		background-color: transparent
+		font-size: 1.8rem
+	&.is-active
+		display: block

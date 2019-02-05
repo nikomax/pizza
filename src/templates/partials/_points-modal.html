@@ -1,0 +1,77 @@
+<div class="modal is-active js-modal">
+  <div class="modal__content">
+    {% if pointsValidation %}
+      <div class="points-validation {% if addShopkeeper %} points-validation--green-bg{% endif %}{% if substractShopkeeper %} points-validation--rose-bg{% endif %}">
+        <div class="points-validation__title">Manager- Please enter current code and validate the purchase</div>
+        <div class="points-validation__inputs js-verification">
+          <input type="text" maxLength="1" size="1" value="*" readonly/>
+          <input type="text" maxLength="1" size="1" placeholder="B"/>
+          <input type="text" maxLength="1" size="1" placeholder="1"/>
+          <input type="text" maxLength="1" size="1" placeholder="2"/>
+          <input type="text" maxLength="1" size="1" placeholder="3"/>
+          <input type="text" maxLength="1" size="1" placeholder="4"/>
+        </div>
+      </div>
+    {% endif %}
+    <div
+      class="points {% if addPoints %}points--green-border{% endif %} {% if substractPoints %}points--rose-border{% endif %}">
+      <button class="modal__close js-modal-close">X</button>
+      <div class="points__title">{% if substractPoints %}subtract{% else %}Add To{% endif %} Points</div>
+      <div class="points__time">12-06-2016 15:13</div>
+      <div class="points__items">
+        <div class="point-item">
+          <div class="point-item__image"></div>
+          <div class="point-item__title">Stoupid Prawn Pizza</div>
+          <div class="point-item__count">{% if substractPoints %}-{%endif%}10</div>
+          <button class="point-item__delete">{{mixins.icon('delete')}}</button>
+        </div>
+        <div class="point-item">
+          <div class="point-item__image"></div>
+          <div class="point-item__title">Large Strawberry Quinkee</div>
+          <div class="point-item__count">{% if substractPoints %}-{%endif%}10</div>
+          <button class="point-item__delete">{{mixins.icon('delete')}}</button>
+        </div>
+        <div class="point-item">
+          <div class="point-item__image"></div>
+          <div class="point-item__title">2 Puffy WarpS</div>
+          <div class="point-item__count">{% if substractPoints %}-{%endif%}20</div>
+          <button class="point-item__delete">{{mixins.icon('delete')}}</button>
+        </div>
+        <div class="point-item">
+          <div class="point-item__image"></div>
+          <div class="point-item__title">Stoupid Casing Doner Meat</div>
+          <div class="point-item__count">{% if substractPoints %}-{%endif%}10</div>
+          <button class="point-item__delete">{{mixins.icon('delete')}}</button>
+        </div>
+      </div>
+      <div class="points__total">
+        <div class="points__total-title">Total</div>
+        <div class="points__total-value">{% if substractPoints %}-{%endif%}50 <span>pts</span></div>
+      </div>
+      {% if addShopkeeper or substractShopkeeper %}
+        <div class="points-text">
+          <div class="points-text__title">Manager</div>
+          <div class="points-text__text">
+            Please confirm the points and press the confirm Button.Thank you
+          </div>
+        </div>
+      {% else %}
+        <div class="points-text">
+          <div class="points-text__title">[User Name]</div>
+          <div class="points-text__text">
+            By pressing Confirm you are Confirming that you will recieve the points. Points will be added your App Account
+            please give the phone to the shopkeeper to update your points. Thank you
+          </div>
+        </div>
+        <div class="points__buttons points__buttons--center">
+          <a href="#" class="btn btn--sm btn--rainbow">Add & Continue</a>
+        </div>
+      {% endif %}
+      <div class="points__buttons">
+        <a href="#" class="btn btn--short btn--white">Cancel</a>
+        <a href="#" class="btn btn--short">Confirm</a>
+      </div>
+    </div>
+  </div>
+
+</div>

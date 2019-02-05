@@ -1,0 +1,41 @@
+---
+title: JinGou
+
+addPoints: true
+
+pointsValidation: true
+
+addShopkeeper: true
+
+contentList: [
+  {
+    text: 'Loyalty',
+    icon: 'icon-loyalty.png'
+  },{
+    text: 'Notification',
+    icon: 'icon-notification.png'
+  },{
+    text: 'Menu',
+    icon: 'icon-menu.png'
+  },{
+    text: 'Cart',
+    icon: 'icon-cart.png'
+  },{
+    text: 'Offers',
+    icon: 'icon-offers.png'
+  }
+]
+
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+  <div class="app js-app is-blured">
+    {% include "partials/_header.html" %}
+    {% include "partials/_loyalty-bank.html" %}
+    {% include "partials/_sidebar.html" %}
+    {% include "partials/_cart.html" %}
+  </div>
+  {% include "partials/_points-modal.html" %}
+
+{% endblock %}

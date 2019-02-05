@@ -65,6 +65,14 @@ PageList:
   ready: 50
 - file: loyalty-bank.html
   ready: 50
+- file: add-points.html
+  ready: 50
+- file: add-points-shopkeeper.html
+  ready: 50
+- file: substract-points.html
+  ready: 50
+- file: substract-points-shopkeeper.html
+  ready: 50
 #- file: order-options.html
 #  ready: 50
 #- file: notification.html
