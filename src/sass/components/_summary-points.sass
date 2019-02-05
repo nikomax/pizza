@@ -69,18 +69,28 @@
 			animation: none
 	.flatpickr-days
 		width: 100%
-	.flatpickr-current-month span.cur-month
-		font-weight: normal
+	.flatpickr-current-month
+		height: auto
+		font-size: 2rem
+		padding: 0.4rem 0 0 0
+		span.cur-month
+			font-weight: normal
 	.flatpickr-weekdays
+		height: auto
 		+semi
+		font-size: 1.8rem
 	.flatpickr-months
 		position: relative
 		margin: 1rem 0
+		height: auto
 		.flatpickr-prev-month, .flatpickr-next-month
+			top: 50%
+			transform: translateY(-50%)
 			svg
 				fill: #f46806
-	.flatpickr-month
-		color: #f46806
+		.flatpickr-month
+			color: #f46806
+			height: 3rem
 	.dayContainer
 		width: 100%
 		min-width: 100%

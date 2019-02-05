@@ -59,13 +59,15 @@ PageList:
   ready: 50
 - file: shop-or-delivery.html
   ready: 50
-- file: order-options.html
+- file: summary-points.html
   ready: 50
+- file: error-message.html
+  ready: 50
+- file: loyalty-bank.html
+  ready: 50
+#- file: order-options.html
+#  ready: 50
 #- file: notification.html
-#  ready: 50
-#- file: summary-points.html
-#  ready: 50
-#- file: error-message.html
 #  ready: 50
 #- file: faq.html
 #  ready: 50
