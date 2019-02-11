@@ -42,6 +42,12 @@
 		font-size: 2.4rem
 		padding: 0.5rem 1rem
 		margin: 1rem 0
+		&--sm-text
+			font-size: 1.45rem
+	&__label
+		color: #494949
+		+semi
+		font-size: 1.95rem
 	&__rate
 		margin: 1rem 0
 		border-radius: 0.4rem
@@ -49,6 +55,14 @@
 		flex-direction: column
 		align-items: center
 		background-color: #adfcff
+	&__rank-item
+		padding: 0.5rem 2rem
+		font-size: 1.95rem
+		display: flex
+		align-items: center
+		justify-content: space-between
+		+semi
+		margin: 1rem 0
 
 .rank
 	margin: 2rem 0 1rem
@@ -73,6 +87,16 @@
 		label:hover, label:hover ~ label
 			.icon
 				fill: #ed8a19
+	&--sm
+		margin: 0
+		.icon
+			font-size: 2.2rem
+		.rank__rating
+			label
+				&:not(:last-child)
+					margin-left: 0.5rem
+				.icon
+					fill: rgba(237, 138, 25, 0.4)
 
 .cart-form
 	&__textarea

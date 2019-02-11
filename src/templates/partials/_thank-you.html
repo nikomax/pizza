@@ -1,0 +1,95 @@
+<main class="main">
+  <div class="container">
+    <div class="thnx-page">
+      <div class="thnx-page__title">Thank you for the custom</div>
+      <div class="y-box y-box--thnx">
+        <div class="y-box__title">Points Have Been Updated</div>
+      </div>
+      <div class="thnx-page__image">
+        <img src="img/dish.png" alt="Food">
+      </div>
+      <div class="thnx-page__foodname">Stoupid Meal</div>
+      <div class="thnx-page__form">
+        <div class="thnx-page__form-title">Review</div>
+        <form action="" class="taste-form">
+          <label for="title" class="taste-form__label">Title</label>
+          <input type="text" class="taste-form__input taste-form__input--sm-text" placeholder="Title" maxlength="25" id="title">
+          <label for="feedback" class="taste-form__label">Feedback</label>
+          <textarea name="" rows="7" class="taste-form__textarea taste-form__textarea--sm-text" placeholder="Your Valued Comment" id="feedback"></textarea>
+          <div class="taste-form__rank-item">
+            <span>Taste</span>
+            <div class="rank rank--sm">
+              <div class="rank__rating">
+                <input type="radio" id="rate1-5-stars" name="taste" value="5"/>
+                <label for="rate1-5-stars" class="star">{{mixins.icon('star')}}</label>
+                <input type="radio" id="rate1-4-stars" name="taste" value="4"/>
+                <label for="rate1-4-stars" class="star">{{mixins.icon('star')}}</label>
+                <input type="radio" id="rate1-3-stars" name="taste" value="3"/>
+                <label for="rate1-3-stars" class="star">{{mixins.icon('star')}}</label>
+                <input type="radio" id="rate1-2-stars" name="taste" value="2"/>
+                <label for="rate1-2-stars" class="star">{{mixins.icon('star')}}</label>
+                <input type="radio" id="rate1-1-star" name="taste" value="1"/>
+                <label for="rate1-1-star" class="star">{{mixins.icon('star')}}</label>
+              </div>
+            </div>
+          </div>
+          <div class="taste-form__rank-item">
+            <span>Value</span>
+            <div class="rank rank--sm">
+              <div class="rank__rating">
+                <input type="radio" id="rate2-5-stars" name="value" value="5"/>
+                <label for="rate2-5-stars" class="star">{{mixins.icon('star')}}</label>
+                <input type="radio" id="rate2-4-stars" name="value" value="4"/>
+                <label for="rate2-4-stars" class="star">{{mixins.icon('star')}}</label>
+                <input type="radio" id="rate2-3-stars" name="value" value="3"/>
+                <label for="rate2-3-stars" class="star">{{mixins.icon('star')}}</label>
+                <input type="radio" id="rate2-2-stars" name="value" value="2"/>
+                <label for="rate2-2-stars" class="star">{{mixins.icon('star')}}</label>
+                <input type="radio" id="rate2-1-star" name="value" value="1"/>
+                <label for="rate2-1-star" class="star">{{mixins.icon('star')}}</label>
+              </div>
+            </div>
+          </div>
+          <div class="taste-form__rank-item">
+            <span>Services</span>
+            <div class="rank rank--sm">
+              <div class="rank__rating">
+                <input type="radio" id="rate3-5-stars" name="services" value="5"/>
+                <label for="rate3-5-stars" class="star">{{mixins.icon('star')}}</label>
+                <input type="radio" id="rate3-4-stars" name="services" value="4"/>
+                <label for="rate3-4-stars" class="star">{{mixins.icon('star')}}</label>
+                <input type="radio" id="rate3-3-stars" name="services" value="3"/>
+                <label for="rate3-3-stars" class="star">{{mixins.icon('star')}}</label>
+                <input type="radio" id="rate3-2-stars" name="services" value="2"/>
+                <label for="rate3-2-stars" class="star">{{mixins.icon('star')}}</label>
+                <input type="radio" id="rate3-1-star" name="services" value="1"/>
+                <label for="rate3-1-star" class="star">{{mixins.icon('star')}}</label>
+              </div>
+            </div>
+          </div>
+          <div class="review-thank-title">
+            Thank You For The Review
+          </div>
+          <div class="main__buttons main__buttons--m1">
+            <button type="reset" class="btn btn--white">Clear</button>
+            <button type="submit" class="btn">Send</button>
+          </div>
+        </form>
+      </div>
+      <div class="center-text">
+        <div class="center-text__title">Taken a Great Picture ?</div>
+        <p>Please send your nice taken photos to
+          our facebook page</p>
+        <p>Close The Page Now. I  will give the Feed Back latter.</p>
+      </div>
+      <div class="main__buttons main__buttons--m1 main__buttons--center">
+        <a href="#" class="btn btn--close">Close Page</a>
+      </div>
+      <div class="main__text-center">
+        We welcome you to leave
+        a comment on Google.
+      </div>
+    </div>
+    {% include "./_fixed-menu.html" %}
+  </div>
+</main>

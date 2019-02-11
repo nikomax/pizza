@@ -73,9 +73,11 @@ PageList:
   ready: 50
 - file: substract-points-shopkeeper.html
   ready: 50
-#- file: order-options.html
-#  ready: 50
-#- file: notification.html
-#  ready: 50
-#- file: faq.html
-#  ready: 50
+- file: thank-you.html
+  ready: 50
+- file: order-options.html
+  ready: 50
+- file: notification.html
+  ready: 50
+- file: faq.html
+  ready: 50
