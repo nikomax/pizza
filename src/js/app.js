@@ -3,6 +3,7 @@ import './components/popup'
 import './components/accordion'
 import './components/sliders'
 import './components/calendar'
+import './components/chart'
 
 const fixedMenuBtn = $('.js-fixed-menu-btn');
 const burgerBtn = $('.js-burger');
