@@ -35,3 +35,57 @@
 			width: 100%
 			object-fit: cover
 
+.m-languages
+	max-width: 21.3rem
+	margin: 4.7rem auto 9.8rem
+	&__item
+		input
+			display: none
+			&:checked ~ .m-language
+				.m-language__check
+					background-color: #18ff00
+					.icon
+						display: block
+		&:not(:last-child)
+			margin-bottom: 2.8rem
+
+.m-language
+	display: flex
+	align-items: center
+	text-decoration: none
+	color: inherit
+	&__flag
+		margin-right: 6.7rem
+		height: 6.3rem
+		width: 6.3rem
+		min-width: 6.3rem
+		overflow: hidden
+		border-radius: 50%
+		border: 1px solid black
+		img
+			height: 100%
+			width: 100%
+			object-fit: cover
+	&__text
+		display: block
+		font-size: 2.4rem
+		margin-bottom: 0.7rem
+	&__check
+		margin-left: 1.7rem
+		box-shadow: 0.1rem 0.1rem 1rem 1.6px rgba(0, 0, 0, 0.38)
+		height: 3rem
+		width: 3rem
+		min-width: 3rem
+		border-radius: 50%
+		display: block
+		position: relative
+		.icon
+			position: absolute
+			bottom: 0.8rem
+			left: 0.5rem
+			display: none
+			font-size: 2.3rem
+			fill: #ffffff
+			filter: drop-shadow(1px 2px 1px rgba(0,0,0,0.5))
+
+

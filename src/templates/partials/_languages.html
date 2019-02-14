@@ -1,0 +1,63 @@
+<main class="main">
+  <div class="container">
+    <div class="title title--sm">Set The Language</div>
+    <form action="">
+
+      <div class="m-languages">
+        <div class="m-languages__item">
+          <input type="radio" name="language" id="English" checked>
+          <label for="English" class="m-language">
+            <span class="m-language__flag">
+              <img src="img/english.png" alt="English">
+            </span>
+            <span class="m-language__content">
+              <span class="m-language__text">English</span>
+              <span class="m-language__check">{{mixins.icon('check')}}</span>
+            </span>
+
+          </label>
+        </div>
+        <div class="m-languages__item">
+          <input type="radio" name="language" id="Polish">
+          <label for="Polish" class="m-language">
+          <span class="m-language__flag">
+            <img src="img/polish.png" alt="Polish">
+          </span>
+            <span class="m-language__content">
+              <span class="m-language__text">Polski</span>
+              <span class="m-language__check">{{mixins.icon('check')}}</span>
+            </span>
+          </label>
+        </div>
+        <div class="m-languages__item">
+          <input type="radio" name="language" id="Romanian">
+          <label for="Romanian" class="m-language">
+          <span class="m-language__flag">
+            <img src="img/romanian.png" alt="Romanian">
+          </span>
+            <span class="m-language__content">
+              <span class="m-language__text">Romanian</span>
+              <span class="m-language__check">{{mixins.icon('check')}}</span>
+            </span>
+          </label>
+        </div>
+        <div class="m-languages__item">
+          <input type="radio" name="language" id="Spanish">
+          <label for="Spanish" class="m-language">
+          <span class="m-language__flag">
+            <img src="img/spanish.png" alt="Spanish">
+          </span>
+            <span class="m-language__content">
+              <span class="m-language__text">Espaniol</span>
+              <span class="m-language__check">{{mixins.icon('check')}}</span>
+            </span>
+          </label>
+        </div>
+      </div>
+
+      <div class="main__buttons main__buttons--center">
+        <button type="submit" class="btn">Close</button>
+      </div>
+    </form>
+  </div>
+</main>

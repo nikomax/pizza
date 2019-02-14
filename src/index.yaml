@@ -87,3 +87,7 @@ PageList:
   ready: 50
 - file: HMC.html
   ready: 50
+- file: empty-cart.html
+  ready: 50
+- file: languages.html
+  ready: 50
