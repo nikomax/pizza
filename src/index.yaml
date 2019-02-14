@@ -85,3 +85,5 @@ PageList:
   ready: 50
 - file: change-password.html
   ready: 50
+- file: HMC.html
+  ready: 50
