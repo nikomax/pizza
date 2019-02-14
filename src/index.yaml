@@ -81,3 +81,7 @@ PageList:
   ready: 50
 - file: faq.html
   ready: 50
+- file: leaving-for-payment.html
+  ready: 50
+- file: change-password.html
+  ready: 50
