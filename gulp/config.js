@@ -17,6 +17,7 @@ var config = {
         sassGen      : 'src/sass/generated',
         js           : 'src/js',
         img          : 'src/img',
+        audio        : 'src/audio',
         svg          : 'src/img/svg',
         icons        : 'src/icons',
         // path to png sources for sprite:png task
@@ -35,6 +36,7 @@ var config = {
         css  : destPath + '/css',
         js   : destPath + '/js',
         img  : destPath + '/img',
+        audio: destPath + '/audio',
         fonts: destPath + '/fonts',
         lib  : destPath + '/lib',
         data : destPath + '/data'

@@ -34,8 +34,15 @@ gulp.task('copy:img', function () {
         .pipe(gulp.dest(config.dest.img));
 });
 
+gulp.task('copy:audio', function () {
+  return gulp
+    .src(config.src.audio + '/**/*.*')
+    .pipe(gulp.dest(config.dest.audio));
+});
+
 gulp.task('copy', [
     'copy:img',
+    'copy:audio',
     // 'copy:rootfiles',
     // 'copy:lib',
     // 'copy:data',

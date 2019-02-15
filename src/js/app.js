@@ -5,6 +5,7 @@ import './components/sliders'
 import './components/calendar'
 import './components/chart'
 import './components/show-password'
+import './components/language-click'
 
 const fixedMenuBtn = $('.js-fixed-menu-btn');
 const burgerBtn = $('.js-burger');

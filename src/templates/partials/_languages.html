@@ -2,11 +2,10 @@
   <div class="container">
     <div class="title title--sm">Set The Language</div>
     <form action="">
-
       <div class="m-languages">
-        <div class="m-languages__item">
-          <input type="radio" name="language" id="English" checked>
-          <label for="English" class="m-language">
+        <div class="m-languages__item js-language-radio">
+          <input type="radio" name="language" id="English" checked class="js-language-radio-input">
+          <label for="English" class="m-language js-language-radio-btn">
             <span class="m-language__flag">
               <img src="img/english.png" alt="English">
             </span>
@@ -14,12 +13,11 @@
               <span class="m-language__text">English</span>
               <span class="m-language__check">{{mixins.icon('check')}}</span>
             </span>
-
           </label>
         </div>
-        <div class="m-languages__item">
-          <input type="radio" name="language" id="Polish">
-          <label for="Polish" class="m-language">
+        <div class="m-languages__item js-language-radio">
+          <input type="radio" name="language" id="Polish" class="js-language-radio-input">
+          <label for="Polish" class="m-language js-language-radio-btn">
           <span class="m-language__flag">
             <img src="img/polish.png" alt="Polish">
           </span>
@@ -29,9 +27,9 @@
             </span>
           </label>
         </div>
-        <div class="m-languages__item">
-          <input type="radio" name="language" id="Romanian">
-          <label for="Romanian" class="m-language">
+        <div class="m-languages__item js-language-radio">
+          <input type="radio" name="language" id="Romanian" class="js-language-radio-input">
+          <label for="Romanian" class="m-language js-language-radio-btn">
           <span class="m-language__flag">
             <img src="img/romanian.png" alt="Romanian">
           </span>
@@ -41,9 +39,9 @@
             </span>
           </label>
         </div>
-        <div class="m-languages__item">
-          <input type="radio" name="language" id="Spanish">
-          <label for="Spanish" class="m-language">
+        <div class="m-languages__item js-language-radio">
+          <input type="radio" name="language" id="Spanish" class="js-language-radio-input">
+          <label for="Spanish" class="m-language js-language-radio-btn">
           <span class="m-language__flag">
             <img src="img/spanish.png" alt="Spanish">
           </span>
@@ -59,6 +57,10 @@
         <button type="submit" class="btn">Close</button>
       </div>
     </form>
+    <audio class="language-click" id="audio-click">
+      <source src="audio/click.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
   </div>
   {% include "./_fixed-menu.html" %}
 </main>
