@@ -91,3 +91,13 @@ PageList:
   ready: 50
 - file: languages.html
   ready: 50
+- file: support-thanks.html
+  ready: 50
+- file: order-complete.html
+  ready: 50
+- file: order-left-building.html
+  ready: 50
+- file: breakfast.html
+  ready: 50
+- file: jingou-serving.html
+  ready: 50

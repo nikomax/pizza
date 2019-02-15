@@ -9,6 +9,14 @@ $('.js-slider').slick({
   dots: true
 });
 
+$('.js-simple-slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  dots: true
+});
+
 $('.js-loyalty-slider').slick({
   infinite: true,
   slidesToShow: 1,

@@ -1,0 +1,23 @@
+<main class="main">
+  <div class="container">
+    <div class="order-number order-number--lg">
+      <div class="order-number__title">Your Order Number:</div>
+      <div class="order-number__value">114040717</div>
+    </div>
+    <div class="check-icon">
+      {{mixins.icon('check-big')}}
+    </div>
+    <div class="title title--sm">Your Order Has Left The Building</div>
+    <div class="text-md text-md--center text-md--width text-md--italic">
+      We’ve sent you an email with all the details of your order & remember you can track your order using this app!
+    </div>
+    <div class="smile">
+      <div class="smile__icon">{{mixins.icon('smile')}}</div>
+      <div class="smile__text">Thank you!</div>
+    </div>
+    <div class="main__buttons main__buttons--m1 main__buttons--center">
+      <a href="#" class="btn btn--lg btn--square">Track</a>
+    </div>
+  </div>
+  {% include "./_fixed-menu.html" %}
+</main>
