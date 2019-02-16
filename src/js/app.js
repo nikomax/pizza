@@ -6,6 +6,7 @@ import './components/calendar'
 import './components/chart'
 import './components/show-password'
 import './components/language-click'
+import Counter from './components/counter'
 
 const fixedMenuBtn = $('.js-fixed-menu-btn');
 const burgerBtn = $('.js-burger');
@@ -14,6 +15,11 @@ const app = $('.js-app');
 const sidebar = $('.js-sidebar');
 const cart = $('.js-cart-menu');
 const verification = $('.js-verification');
+const counters = $('.js-counter');
+
+counters.each((item, counter) => {
+  new Counter($(counter))
+});
 
 fixedMenuBtn.on('click', (e) => {
   $(e.currentTarget).parents('.js-fixed-menu').toggleClass('is-active');

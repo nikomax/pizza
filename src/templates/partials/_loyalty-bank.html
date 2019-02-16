@@ -130,13 +130,13 @@
         </div>
       </div>
     </div>
-    <div class="quantity">
+    <div class="quantity js-counter">
       <div class="quantity__content">
         <div class="quantity__text">Quantity</div>
-        <div class="quantity__count">2</div>
+        <div class="quantity__count js-counter-value" data-count-value="2">2</div>
         <div class="quantity__buttons">
-          <button type="button" class="quantity__button">{{mixins.icon('minus')}}</button>
-          <button type="button" class="quantity__button quantity__button--plus">{{mixins.icon('plus')}}</button>
+          <button type="button" class="quantity__button js-counter-decrement">{{mixins.icon('minus')}}</button>
+          <button type="button" class="quantity__button quantity__button--plus js-counter-increment">{{mixins.icon('plus')}}</button>
         </div>
       </div>
     </div>
