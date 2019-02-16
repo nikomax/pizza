@@ -1,0 +1,39 @@
+<main class="main">
+  <div class="container">
+    <div class="serving-logo">
+      <img src="img/quinkee.png" alt="quinkee">
+    </div>
+    <div class="message">
+      <div class="message__title message__title--sm">Quinkee
+        <button class="youtube-btn">{{mixins.icon('youtube')}}</button>
+      </div>
+      <div class="message__text">
+        A warm wrap with ice Cream and fruits ...wow they will beat any carrot cake
+      </div>
+    </div>
+    <div class="s-items">
+      {% for item in food %}
+      <div class="s-items__item">
+        <div class="s-item">
+          <div class="s-item__content js-item-modal-btn" data-item-title="{{item.title}}" data-item-image="/img/food.png" data-item-desc="{{item.desc}}">
+            {% if item.image %}
+              <img src="{{item.image}}" alt="{{item.title}}">
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="main__buttons main__buttons--center main__buttons--m1">
+      <a href="#" class="btn">Quinkee</a>
+    </div>
+    {% include "./_fixed-menu.html" %}
+  </div>
+  <div class="item-modal item-modal--item js-item-modal">
+    <div class="item-modal__title js-item-modal-title">test</div>
+    <div class="item-modal__desc js-item-modal-desc">test</div>
+    <div class="item-modal__image">
+      <img src="" alt="" class="js-item-modal-image">
+    </div>
+  </div>
+</main>

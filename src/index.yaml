@@ -101,3 +101,13 @@ PageList:
   ready: 50
 - file: jingou-serving.html
   ready: 50
+- file: quinkee.html
+  ready: 50
+- file: stoupid-pizza.html
+  ready: 50
+- file: support.html
+  ready: 50
+- file: settings.html
+  ready: 50
+- file: edit-profile.html
+  ready: 50

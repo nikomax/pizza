@@ -1,0 +1,49 @@
+.settings
+	margin: 1rem -2rem
+	&__item
+		padding: 0 2rem
+		border-bottom: 1px solid #959595
+
+.settings-link
+	display: flex
+	align-items: center
+	justify-content: space-between
+	text-decoration: none
+	color: #464646
+	font-size: 1.95rem
+	padding: 2rem 0
+	&__arrow
+		font-size: 1.5rem
+		.icon
+			fill: #565656
+			transform: rotate(-90deg)
+
+.settings-checkbox
+	input
+		display: none
+		&:checked ~ .settings-checkbox__label
+			.settings-checkbox__icon
+				background-color: #ff6c00
+				border-color: #ff6c00
+				.icon
+					display: block
+	&__label
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 1.5rem 0
+		font-size: 1.95rem
+		color: #464646
+	&__icon
+		height: 3rem
+		width: 3rem
+		min-width: 3rem
+		border-radius: 0.5rem
+		border: 1px solid black
+		font-size: 1.5rem
+		display: flex
+		justify-content: center
+		align-items: center
+		.icon
+			fill: #ffffff
+			display: none

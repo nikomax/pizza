@@ -1,0 +1,54 @@
+<main class="main">
+  <div class="container">
+    <div class="profile-page">
+      <div class="profile-photo">
+        <div class="profile-photo__placeholder">Add Your Picture</div>
+      </div>
+      <div class="text-lg text-lg--center">Angel James</div>
+      <form action="">
+        <div class="profile-file">
+          <input type="file" id="photo">
+          <label for="photo" class="profile-file__label">
+            <span class="profile-file__icon">{{mixins.icon('picture')}}</span>
+            <span class="profile-file__placeholder">Picture</span>
+          </label>
+        </div>
+        <div class="profile-input">
+          <div class="profile-input__icon">{{mixins.icon('user')}}</div>
+          <input type="text" class="profile-input__input" placeholder="Name">
+        </div>
+        <div class="profile-input">
+          <div class="profile-input__icon">{{mixins.icon('user')}}</div>
+          <input type="text" class="profile-input__input" placeholder="Surname">
+        </div>
+        <div class="profile-input">
+          <div class="profile-input__icon">{{mixins.icon('phone')}}</div>
+          <input type="text" class="profile-input__input" placeholder="Mobile Phone (this phone)">
+        </div>
+        <div class="profile-input">
+          <div class="profile-input__icon">{{mixins.icon('map1')}}</div>
+          <input type="text" class="profile-input__input" placeholder="Street1">
+        </div>
+        <div class="profile-input">
+          <div class="profile-input__icon">{{mixins.icon('map1')}}</div>
+          <input type="text" class="profile-input__input" placeholder="Street2">
+        </div>
+        <div class="profile-input">
+          <div class="profile-input__icon">{{mixins.icon('map2')}}</div>
+          <input type="text" class="profile-input__input" placeholder="Coventry">
+        </div>
+        <div class="profile-input">
+          <div class="profile-input__icon">{{mixins.icon('map2')}}</div>
+          <input type="text" class="profile-input__input" placeholder="Postcode">
+        </div>
+        <div class="profile-input">
+          <div class="profile-input__icon">{{mixins.icon('letter')}}</div>
+          <input type="email" class="profile-input__input" placeholder="Email">
+        </div>
+        <div class="main__buttons main__buttons--m8 main__buttons--center">
+          <button type="submit" class="btn btn--lg btn--square">Save Details</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>

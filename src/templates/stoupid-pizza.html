@@ -1,0 +1,71 @@
+---
+title: JinGou
+
+headerBack: true
+
+food: [
+  {
+    image: 'img/pizza.png',
+    title: 'Stoupid Prawn Pizza',
+    desc: 'Stoupid Casing  Doner Meat Tomato Sauce  Onions'
+  },{
+    image: 'img/pizza.png',
+    title: 'Stoupid Prawn Pizza',
+    desc: 'Stoupid Casing  Doner Meat Tomato Sauce  Onions'
+  },{
+    image: 'img/pizza.png',
+    title: 'Stoupid Prawn Pizza',
+    desc: 'Stoupid Casing  Doner Meat Tomato Sauce  Onions'
+  },{
+    image: 'img/pizza.png',
+    title: 'Stoupid Prawn Pizza',
+    desc: 'Stoupid Casing  Doner Meat Tomato Sauce  Onions'
+  },{
+    image: 'img/pizza.png',
+    title: 'Stoupid Prawn Pizza',
+    desc: 'Stoupid Casing  Doner Meat Tomato Sauce  Onions'
+  },{
+    image: 'img/pizza.png',
+    title: 'Stoupid Prawn Pizza',
+    desc: 'Stoupid Casing  Doner Meat Tomato Sauce  Onions'
+  },{
+    image: 'img/pizza.png',
+    title: 'Stoupid Prawn Pizza',
+    desc: 'Stoupid Casing  Doner Meat Tomato Sauce  Onions'
+  },{
+    image: 'img/pizza.png',
+    title: 'Stoupid Prawn Pizza',
+    desc: 'Stoupid Casing  Doner Meat Tomato Sauce  Onions'
+  }
+]
+
+contentList: [
+  {
+    text: 'Loyalty',
+    icon: 'icon-loyalty.png'
+  },{
+    text: 'Notification',
+    icon: 'icon-notification.png'
+  },{
+    text: 'Menu',
+    icon: 'icon-menu.png'
+  },{
+    text: 'Cart',
+    icon: 'icon-cart.png'
+  },{
+    text: 'Offers',
+    icon: 'icon-offers.png'
+  }
+]
+
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+  <div class="app js-app">
+    {% include "partials/_header.html" %}
+    {% include "partials/_stoupid-pizza.html" %}
+    {% include "partials/_cart.html" %}
+  </div>
+
+{% endblock %}
