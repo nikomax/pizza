@@ -111,3 +111,5 @@ PageList:
   ready: 50
 - file: edit-profile.html
   ready: 50
+- file: user-profile.html
+  ready: 50

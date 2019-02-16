@@ -1,0 +1,41 @@
+<main class="main">
+  <div class="container">
+    <div class="profile-page">
+      <div class="profile-photo">
+        <div class="profile-photo__placeholder">Add Your Picture</div>
+      </div>
+      <div class="text-lg text-lg--center">Angel James</div>
+
+      <div class="profile-items">
+        <div class="profile-item">
+          <div class="profile-item__title">angle.james@gmail.com</div>
+          <button class="profile-item__edit">{{mixins.icon('pen')}}</button>
+        </div>
+        <div class="profile-item">
+          <div class="profile-item__title">1234 5678 910</div>
+        </div>
+      </div>
+
+      <a href="#" class="profile-password-link">
+        <span class="profile-password-link__icon">{{mixins.icon('lock')}}</span>
+        <span class="profile-password-link__title">Change Password</span>
+        <span class="profile-password-link__arrow">{{mixins.icon('bottom')}}</span>
+      </a>
+
+      <div class="profile-address">
+        <div class="profile-address__title">
+          <span>Angel James</span>
+          <button class="profile-address__delete">{{mixins.icon('basket')}}</button>
+        </div>
+        <div class="profile-address__content">
+          <p>84 Holmsdale Road. Coventry</p>
+          <p>+44 721170134</p>
+          <p>Angel@hotmail.com</p>
+        </div>
+      </div>
+
+      <a href="#" class="profile-new-address">+ Add New Address</a>
+
+    </div>
+  </div>
+</main>
