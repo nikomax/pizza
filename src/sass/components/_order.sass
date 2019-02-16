@@ -1,0 +1,83 @@
+.orders
+	&__title
+		font-size: 2.9rem
+		margin-bottom: 1rem
+		text-align: center
+
+.order-item
+	display: flex
+	padding: 1.8rem 0 0.8rem 1rem
+	margin-bottom: 1rem
+	&__icon
+		margin-right: 3rem
+		font-size: 3.5rem
+		margin-top: 1rem
+		.icon
+			fill: #464646
+	&__info
+		flex-grow: 1
+	&__title
+		margin-bottom: 0.7rem
+		font-size: 2.1rem
+	&__status
+		color: #ff6c00
+	&__price
+		line-height: 1
+		font-size: 4rem
+		+raleway
+		color: #ff6c00
+	&--border
+		border-bottom: 1px dashed #ababab
+
+.orders-message
+	margin: 1.1rem 0 4rem
+	color: #3c00ff
+	&__title
+		font-size: 1.9rem
+		margin-bottom: 1rem
+	&__text
+		letter-spacing: -0.05rem
+		+semibold-italic
+
+.order-pos
+	display: flex
+	margin: 2.5rem 0
+	&__image
+		margin-right: 2rem
+		width: 10rem
+		min-width: 10rem
+		height: 10rem
+		border-radius: 0.4rem
+		background-color: #555555
+		box-shadow: 0.1rem 0.1rem 0.6rem 0 rgba(0, 0, 0, 0.2)
+		overflow: hidden
+		img
+			height: 100%
+			width: 100%
+			object-fit: contain
+	&__title
+		font-size: 2rem
+		margin-bottom: 1rem
+	&__calcs
+		+raleway
+		font-size: 1.45rem
+
+.border-message
+	margin: 2.8rem 0
+	color: #464646
+	padding: 0.5rem
+	border: 0.1rem solid #000000
+	border-radius: 0.6rem
+	&__title
+		font-size: 1.95rem
+		margin-bottom: 0.5rem
+	&__text
+		line-height: 1.5
+		font-size: 1.6rem
+
+.bottom-message
+	font-size: 2.9rem
+	text-align: center
+	padding-top: 2rem
+	line-height: 1.5
+	border-top: 1px dashed #ababab

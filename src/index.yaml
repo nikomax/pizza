@@ -113,3 +113,5 @@ PageList:
   ready: 50
 - file: user-profile.html
   ready: 50
+- file: orders-details.html
+  ready: 50
