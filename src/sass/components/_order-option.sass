@@ -53,17 +53,25 @@
 	&--blue
 		#{$this}__box
 			border-color: #2400fe
+	&.is-active
+		.order-option-title
+			border-color: transparent
+			&__addition
+				opacity: 1
 
 .order-option-title
 	padding-bottom: 0.3rem
 	display: flex
 	font-size: 2.4rem
 	border-bottom: 1px solid #cccccc
+	transition: border-color 0.3s
 	&__text
 		flex-grow: 1
 	&__addition
 		width: 46%
 		text-align: center
+		opacity: 0
+		transition: opacity 0.3s
 	&__arrow
 		width: 5%
 		.icon
