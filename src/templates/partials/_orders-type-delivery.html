@@ -6,13 +6,43 @@
       Hour. Please Check Your Number
     </b>
 
+    <form action="">
+      <div class="delivery-radio">
+        <input type="radio" id="delivery" name="delivery-type" checked>
+        <label class="delivery-radio__label" for="delivery">Delivery</label>
+      </div>
 
-    <a href="#" class="simple-btn simple-btn--add">+ Add New Address</a>
+      <div class="delivery-radio">
+        <input type="radio" id="collection" name="delivery-type">
+        <label class="delivery-radio__label" for="collection">Collection (in 30 minutes) </label>
+      </div>
 
-    <div class="main__buttons main__buttons--center">
-      <a href="#" class="btn btn--lg btn--square">Continue</a>
-    </div>
+      <div class="delivery-addresses">
+        <div class="delivery-address">
+          <div class="delivery-radio">
+            <input type="radio" id="address1" name="delivery-address" checked>
+            <label class="delivery-radio__address" for="address1">
+              <span class="delivery-radio__icon"></span>
+              <span class="delivery-radio__text">
+                Angel James <br>
+                84 Holmsdale Rd Coventry.<br>
+                Wawickshire, CV6 5BJ<br>
+                07425170135
+              </span>
+              <button type="button" class="delivery-radio__delete">{{mixins.icon('basket')}}</button>
+            </label>
+          </div>
 
+        </div>
+
+      </div>
+
+      <a href="#" class="simple-btn simple-btn--add">+ Add New Address</a>
+
+      <div class="main__buttons main__buttons--center">
+        <button type="submit" class="btn btn--lg btn--square">Continue</button>
+      </div>
+    </form>
     {% include "./_fixed-menu.html" %}
   </div>
 </main>

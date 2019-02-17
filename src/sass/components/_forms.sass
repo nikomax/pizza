@@ -240,3 +240,56 @@
 	background-color: #e5e5e5
 	+semi
 	+placeholder-color(black)
+
+.delivery-radio
+	margin: 3rem 0
+	input
+		display: none
+		&:checked ~
+			.delivery-radio__label:before
+				background-color: #ff6c00
+			.delivery-radio__address
+				border-color: #ff6c00
+				.delivery-radio__icon
+					background-color: #ff6c00
+	&__label
+		font-size: 2rem
+		+semi
+		position: relative
+		display: block
+		padding-left: 3rem
+		&:before
+			display: block
+			position: absolute
+			content: ''
+			height: 2rem
+			width: 2rem
+			border-radius: 50%
+			top: 50%
+			left: 0
+			transform: translateY(-50%)
+			background-color: #eeeeee
+	&__address
+		display: flex
+		border-radius: 0.5rem
+		align-items: flex-start
+		border: 1px solid #eeeeee
+		padding: 1rem
+		font-size: 1.9rem
+		line-height: 1.5
+	&__icon
+		margin-top: 0.5rem
+		height: 2rem
+		width: 2rem
+		min-width: 2rem
+		border-radius: 50%
+		background-color: #eeeeee
+		margin-right: 2rem
+	&__text
+		flex-grow: 1
+	&__delete
+		background-color: transparent
+		font-size: 3rem
+		.icon
+			fill: #959595
+
