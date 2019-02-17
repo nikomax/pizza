@@ -2,36 +2,36 @@
   <div class="container">
     <h2 class="title">Choose before you  start to browse the Jingou App</h2>
     <div class="languages">
-      <div class="languages__item">
-        <input type="radio" name="language" id="English" checked>
-        <label for="English" class="language">
+      <div class="languages__item js-language-radio">
+        <input type="radio" name="language" id="English" checked class="js-language-radio-input">
+        <label for="English" class="language js-language-radio-btn">
           <span class="language__flag">
             <img src="img/english.png" alt="English">
           </span>
           <span class="language__text">English</span>
         </label>
       </div>
-      <div class="languages__item">
-        <input type="radio" name="language" id="Polish">
-        <label for="Polish" class="language">
+      <div class="languages__item js-language-radio">
+        <input type="radio" name="language" id="Polish" class="js-language-radio-input">
+        <label for="Polish" class="language js-language-radio-btn">
           <span class="language__flag">
             <img src="img/polish.png" alt="Polish">
           </span>
           <span class="language__text">Polski</span>
         </label>
       </div>
-      <div class="languages__item">
-        <input type="radio" name="language" id="Romanian">
-        <label for="Romanian" class="language">
+      <div class="languages__item js-language-radio">
+        <input type="radio" name="language" id="Romanian" class="js-language-radio-input">
+        <label for="Romanian" class="language js-language-radio-btn">
           <span class="language__flag">
             <img src="img/romanian.png" alt="Romanian">
           </span>
           <span class="language__text">Romanian</span>
         </label>
       </div>
-      <div class="languages__item">
-        <input type="radio" name="language" id="Spanish">
-        <label for="Spanish" class="language">
+      <div class="languages__item js-language-radio">
+        <input type="radio" name="language" id="Spanish" class="js-language-radio-input">
+        <label for="Spanish" class="language js-language-radio-btn">
           <span class="language__flag">
             <img src="img/spanish.png" alt="Spanish">
           </span>
@@ -67,6 +67,10 @@
     <div class="main__buttons main__buttons--center main__buttons--m1">
       <a href="#" class="btn btn--yellow">View Difference !</a>
     </div>
+    <audio class="language-click" id="audio-click">
+      <source src="audio/click.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
     {% include "./_fixed-menu.html" %}
   </div>
 </main>

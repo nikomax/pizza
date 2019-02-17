@@ -1,0 +1,69 @@
+<main class="main">
+  <div class="container">
+    <div class="gradient-banner">
+      <div class="gradient-banner__title">Your Order Is For Delivery</div>
+      <div class="gradient-banner__icon">{{mixins.icon('cart')}}</div>
+    </div>
+    <div class="order-pos">
+      <div class="order-pos__image"></div>
+      <div class="order-pos__info">
+        <div class="order-pos__title">2 x Stoupid Doner Pizza</div>
+        <div class="order-pos__calcs">2 x £2.25 = £ 4.50</div>
+      </div>
+      <div class="order-pos__actions">
+        <button class="order-pos__edit">{{mixins.icon('edit-round')}}</button>
+        <button class="order-pos__delete">{{mixins.icon('delete')}}</button>
+      </div>
+    </div>
+    <div class="order-pos">
+      <div class="order-pos__image"></div>
+      <div class="order-pos__info">
+        <div class="order-pos__title">2 x Stoupid Doner Pizza</div>
+        <div class="order-pos__calcs">2 x £2.25 = £ 4.50</div>
+      </div>
+      <div class="order-pos__actions">
+        <button class="order-pos__edit">{{mixins.icon('edit-round')}}</button>
+        <button class="order-pos__delete">{{mixins.icon('delete')}}</button>
+      </div>
+    </div>
+
+    <div class="title title--sm">Update Cart</div>
+
+    <div class="border-message">
+      <div class="border-message__title">Message To Chef</div>
+      <div class="border-message__text">
+        Hi, Please pack green sauce in my order and please tell
+        your delivery man that he has to come on 2nd floor becau
+        se I’m not available at home.
+      </div>
+    </div>
+    <div class="border-message">
+      <div class="border-message__title">Message To Driver</div>
+      <div class="border-message__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore ma
+        gna aliqua. Ut enim ad minim veniam, quis nostrud exerc
+      </div>
+    </div>
+
+    <div class="cart-points">
+      <div class="cart-points__main">
+        <div class="cart-points__title">20 Points Will be Added To Your Acc</div>
+        <div class="loyalty-bank">
+          <div class="loyalty-bank__icon">{{mixins.icon('crown')}}</div>
+          <div class="loyalty-bank__count">Total Loyalty Points</div>
+          <div class="loyalty-bank__text">450</div>
+        </div>
+      </div>
+      <div class="cart-points__bottom">
+        <button class="simple-btn">Add more items</button>
+        <div class="cart-points__total">Total:  £ 7.35</div>
+      </div>
+    </div>
+    <div class="main__buttons main__buttons--center">
+      <a href="#" class="btn btn--lg btn--square">To Check Out</a>
+    </div>
+
+    {% include "./_fixed-menu.html" %}
+  </div>
+</main>

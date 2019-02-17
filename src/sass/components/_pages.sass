@@ -222,9 +222,9 @@
 		bottom: 0
 		right: 0
 		opacity: 0
-		transform: translate(0) scale(0)
+		transform: translate(0) scale(0) rotate(0)
 	to
-		transform: translate(0) scale(1)
+		transform: translate(0) scale(1) rotate(30deg)
 		opacity: 1
 
 @keyframes bubblesOut
@@ -490,7 +490,6 @@
 			display: block
 			top: 12.8rem
 			right: 6.8rem
-			transform: rotate(25deg)
 			height: 1.7rem
 			width: 3.3rem
 			background-color: #1200ff
@@ -499,7 +498,6 @@
 			right: -1rem
 			height: 3.5rem
 			width: 3.5rem
-			transform: rotate(45deg)
 			background-color: #00ff54
 
 @keyframes bubblesComeProfile
@@ -507,7 +505,77 @@
 		top: 0
 		right: 0
 		opacity: 0
-		//transform: translate(0) scale(0)
+		transform: translate(0) scale(0) rotate(0)
 	to
-		//transform: translate(0) scale(1)
+		transform: translate(0) scale(1) rotate(25deg)
 		opacity: 1
+
+.cart-deco
+	height: 11rem
+	z-index: -1
+	position: relative
+	bottom: 0
+	left: 0
+	width: 100%
+	span
+		animation: bubblesCome 2.5s
+		animation-fill-mode: forwards
+		position: absolute
+		display: block
+		&:nth-child(1)
+			display: none
+		&:nth-child(2)
+			bottom: -3.1rem
+			right: 48.1rem
+			height: 13.1rem
+			width: 13.1rem
+			border-radius: 50%
+			border: 1.2rem solid #000000
+		&:nth-child(3)
+			bottom: -11rem
+			right: 13.8rem
+			height: 13.5rem
+			width: 13.5rem
+			border-radius: 50%
+			background-color: #b33df3
+		&:nth-child(4)
+			bottom: -0.3rem
+			right: 28.3rem
+			height: 9.3rem
+			width: 9.3rem
+			border-radius: 50%
+			background-color: #2cb108
+		&:nth-child(5)
+			top: 2.3rem
+			right: 23.7rem
+			height: 4.8rem
+			width: 4.8rem
+			border-radius: 50%
+			background-color: #7444e8
+		&:nth-child(6)
+			bottom: 8.8rem
+			right: 34.1rem
+			height: 4.3rem
+			width: 4.3rem
+			border-radius: 50%
+			background-color: #e8ea62
+		&:nth-child(7)
+			bottom: -6.7rem
+			right: 37.5rem
+			height: 8.6rem
+			width: 8.6rem
+			border-radius: 50%
+			background-color: #ff7282
+		&:nth-child(8)
+			bottom: 9.8rem
+			right: 27.8rem
+			transform: rotate(28deg)
+			height: 3.1rem
+			width: 5.3rem
+			background-color: #1200ff
+		&:nth-child(9)
+			bottom: -9rem
+			right: 47.8rem
+			height: 3.3rem
+			width: 3.3rem
+			background-color: #00ff54

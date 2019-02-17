@@ -6,6 +6,7 @@ import './components/calendar'
 import './components/chart'
 import './components/show-password'
 import './components/language-click'
+import './components/tabs'
 import Counter from './components/counter'
 
 const fixedMenuBtn = $('.js-fixed-menu-btn');
