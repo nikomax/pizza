@@ -6,7 +6,7 @@
 
 .order-item
 	display: flex
-	padding: 1.8rem 0 0.8rem 1rem
+	padding: 1.8rem 1rem 0.8rem 1rem
 	margin-bottom: 1rem
 	&__icon
 		margin-right: 3rem
@@ -28,6 +28,14 @@
 		color: #ff6c00
 	&--border
 		border-bottom: 1px dashed #ababab
+	&--order
+		.order-number__title
+			+semi
+		.order-item__price
+			font-size: 2.4rem
+		.order-item__status
+			font-size: 2.4rem
+			+semi
 
 .orders-message
 	margin: 1.1rem 0 4rem
@@ -120,3 +128,27 @@
 		display: none
 		&.is-active
 			display: block
+	&__button
+		margin: 3rem 0
+		display: flex
+		justify-content: flex-end
+	&__order
+		border-bottom: 1px solid #cccccc
+
+.orders-info-list
+	font-size: 1.9rem
+	padding: 0.5rem 1rem 0.5rem 3rem
+	list-style: disc
+	line-height: 1.7
+	&__item
+		display: flex
+		span
+			padding: 0 0.5rem
+			&:nth-child(1)
+				width: 60%
+			&:nth-child(2)
+				width: 20%
+			&:nth-child(3)
+				+raleway
+				text-align: right
+				width: 20%

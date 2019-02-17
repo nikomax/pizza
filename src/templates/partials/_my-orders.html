@@ -1,19 +1,126 @@
 <main class="main">
   <div class="container">
-      <div class="orders-info js-tabs">
-        <div class="orders-info__tab-links">
-          <a href="#" class="orders-info__tab-link is-active js-tab-link" data-tab-index="1">Ongoing Orders</a>
-          <a href="#" class="orders-info__tab-link js-tab-link" data-tab-index="2">Past Orders</a>
-        </div>
-        <div class="orders-info__tabs">
-          <div class="orders-info__content is-active js-tab" data-tab-index="1">
-            order1
+    <div class="orders-info js-tabs">
+      <div class="orders-info__tab-links">
+        <a href="#" class="orders-info__tab-link is-active js-tab-link" data-tab-index="1">Ongoing Orders</a>
+        <a href="#" class="orders-info__tab-link js-tab-link" data-tab-index="2">Past Orders</a>
+      </div>
+      <div class="orders-info__tabs">
+        <div class="orders-info__content is-active js-tab" data-tab-index="1">
+          <div class="orders-info__order">
+            <div class="order-item order-item--order">
+              <div class="order-item__icon">{{mixins.icon('moto')}}</div>
+              <div class="order-item__info">
+                <div class="order-item__title">Order No - 110040717</div>
+                <div class="order-item__status">Order Left The Bldg</div>
+              </div>
+              <div class="order-item__price">£ 9.30</div>
+            </div>
+            <ul class="orders-info-list">
+              <li>
+                <div class="orders-info-list__item">
+                  <span>Stoupid Doner Pizza</span>
+                  <span>Qty: 2</span>
+                  <span>£ 6.00</span>
+                </div>
+              </li>
+              <li>
+                <div class="orders-info-list__item">
+                  <span>Chocolate Quinkee</span>
+                  <span>Qty: 1</span>
+                  <span>£ 3.30</span>
+                </div>
+              </li>
+            </ul>
+            <div class="orders-info__button">
+              <a href="#" class="btn btn--sm btn--square">Track Order</a>
+            </div>
           </div>
-          <div class="orders-info__content js-tab" data-tab-index="2">
-            order2
+          <div class="orders-info__order">
+            <div class="order-item order-item--order">
+              <div class="order-item__icon">{{mixins.icon('bag')}}</div>
+              <div class="order-item__info">
+                <div class="order-item__title">Order No - 110040717</div>
+                <div class="order-item__status">Order Prepairing</div>
+              </div>
+              <div class="order-item__price">£ 33.80</div>
+            </div>
+            <ul class="orders-info-list">
+              <li>
+                <div class="orders-info-list__item">
+                  <span>Stoupid Doner Pizza</span>
+                  <span>Qty: 2</span>
+                  <span>£ 6.00</span>
+                </div>
+              </li>
+              <li>
+                <div class="orders-info-list__item">
+                  <span>Chocolate Quinkee</span>
+                  <span>Qty: 1</span>
+                  <span>£ 3.30</span>
+                </div>
+              </li>
+              <li>
+                <div class="orders-info-list__item">
+                  <span>Stoupid Doner Pizza</span>
+                  <span>Qty: 2</span>
+                  <span>£ 6.00</span>
+                </div>
+              </li>
+              <li>
+                <div class="orders-info-list__item">
+                  <span>Chocolate Quinkee</span>
+                  <span>Qty: 1</span>
+                  <span>£ 3.30</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="orders-info__content js-tab" data-tab-index="2">
+          <div class="orders-info__order">
+            <div class="order-item order-item--order">
+              <div class="order-item__icon">{{mixins.icon('bag')}}</div>
+              <div class="order-item__info">
+                <div class="order-item__title">Order No - 110040717</div>
+                <div class="order-item__status">Order Closed</div>
+              </div>
+              <div class="order-item__price">£ 33.80</div>
+            </div>
+            <ul class="orders-info-list">
+              <li>
+                <div class="orders-info-list__item">
+                  <span>Stoupid Doner Pizza</span>
+                  <span>Qty: 2</span>
+                  <span>£ 6.00</span>
+                </div>
+              </li>
+              <li>
+                <div class="orders-info-list__item">
+                  <span>Chocolate Quinkee</span>
+                  <span>Qty: 1</span>
+                  <span>£ 3.30</span>
+                </div>
+              </li>
+              <li>
+                <div class="orders-info-list__item">
+                  <span>Stoupid Doner Pizza</span>
+                  <span>Qty: 2</span>
+                  <span>£ 6.00</span>
+                </div>
+              </li>
+              <li>
+                <div class="orders-info-list__item">
+                  <span>Chocolate Quinkee</span>
+                  <span>Qty: 1</span>
+                  <span>£ 3.30</span>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+    </div>
 
     {% include "./_fixed-menu.html" %}
   </div>
