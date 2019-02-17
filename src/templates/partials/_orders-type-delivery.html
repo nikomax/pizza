@@ -7,17 +7,17 @@
     </b>
 
     <form action="">
-      <div class="delivery-radio">
-        <input type="radio" id="delivery" name="delivery-type" checked>
+      <div class="delivery-radio js-delivery-radio">
+        <input type="radio" id="delivery" name="delivery-type" class="js-delivery-radio-delivery">
         <label class="delivery-radio__label" for="delivery">Delivery</label>
       </div>
 
-      <div class="delivery-radio">
-        <input type="radio" id="collection" name="delivery-type">
+      <div class="delivery-radio js-delivery-radio">
+        <input type="radio" id="collection" name="delivery-type" checked>
         <label class="delivery-radio__label" for="collection">Collection (in 30 minutes) </label>
       </div>
 
-      <div class="delivery-addresses">
+      <div class="delivery-addresses js-delivery-addresses">
         <div class="delivery-address">
           <div class="delivery-radio">
             <input type="radio" id="address1" name="delivery-address" checked>
@@ -32,7 +32,6 @@
               <button type="button" class="delivery-radio__delete">{{mixins.icon('basket')}}</button>
             </label>
           </div>
-
         </div>
 
       </div>

@@ -96,3 +96,11 @@ $('.js-variant').scroll( (e) => {
     bonusesRevert.addClass('is-hidden');
   }
 });
+
+$('.js-delivery-radio').on('click', (e) => {
+  if ($(e.currentTarget).find('.js-delivery-radio-delivery:checked').length) {
+    $('.js-delivery-addresses').fadeIn();
+  } else {
+    $('.js-delivery-addresses').fadeOut();
+  }
+});
