@@ -8,8 +8,12 @@ export default class Counter {
 
     this.init()
   }
+  returnValue() {
+
+  }
   updValue() {
-    this.shower.html(this.currentValue)
+    this.shower.html(this.currentValue);
+    this.returnValue(this.currentValue)
   }
   increment() {
     this.currentValue++;

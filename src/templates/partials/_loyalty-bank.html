@@ -20,7 +20,7 @@
         <a href="#" class="btn btn--dark-red">See Menu</a>
       </div>
       <div class="loyalty-carousel js-loyalty-slider">
-        <div class="loyalty-carousel__item">
+        <div class="loyalty-carousel__item js-loyalty-item" data-earn-pts="10" data-pay-pts="100">
           <div class="lc-item">
             <div class="lc-item__image">
               <img src="img/dish.png" alt="Pizza&Drink">
@@ -32,13 +32,20 @@
                 <p>Line 2.........Line 2........Line 2</p>
               </div>
               <div class="lc-item__price">£2.99</div>
+              <div class="lc-item__loyalty">
+                <div class="bonus-earn">
+                  <div class="bonus-earn__icon">{{mixins.icon('crown')}}</div>
+                  <div class="bonus-earn__value">Earn 10 pts</div>
+                </div>
+                <div class="bonus-pay">Pay With 100 pts</div>
+              </div>
             </div>
             <div class="lc-item__allergens">
               <a href="./allergen.html" class="allergen-link">Allergens !</a>
             </div>
           </div>
         </div>
-        <div class="loyalty-carousel__item">
+        <div class="loyalty-carousel__item js-loyalty-item" data-earn-pts="15" data-pay-pts="120">
           <div class="lc-item">
             <div class="lc-item__image">
               <img src="img/dish.png" alt="Pizza&Drink">
@@ -50,13 +57,20 @@
                 <p>Line 2.........Line 2........Line 2</p>
               </div>
               <div class="lc-item__price">£2.99</div>
+              <div class="lc-item__loyalty">
+                <div class="bonus-earn">
+                  <div class="bonus-earn__icon">{{mixins.icon('crown')}}</div>
+                  <div class="bonus-earn__value">Earn 15 pts</div>
+                </div>
+                <div class="bonus-pay">Pay With 120 pts</div>
+              </div>
             </div>
             <div class="lc-item__allergens">
               <a href="./allergen.html" class="allergen-link">Allergens !</a>
             </div>
           </div>
         </div>
-        <div class="loyalty-carousel__item">
+        <div class="loyalty-carousel__item js-loyalty-item" data-earn-pts="10" data-pay-pts="100">
           <div class="lc-item">
             <div class="lc-item__image">
               <img src="img/dish.png" alt="Pizza&Drink">
@@ -68,13 +82,20 @@
                 <p>Line 2.........Line 2........Line 2</p>
               </div>
               <div class="lc-item__price">£2.99</div>
+              <div class="lc-item__loyalty">
+                <div class="bonus-earn">
+                  <div class="bonus-earn__icon">{{mixins.icon('crown')}}</div>
+                  <div class="bonus-earn__value">Earn 10 pts</div>
+                </div>
+                <div class="bonus-pay">Pay With 100 pts</div>
+              </div>
             </div>
             <div class="lc-item__allergens">
               <a href="./allergen.html" class="allergen-link">Allergens !</a>
             </div>
           </div>
         </div>
-        <div class="loyalty-carousel__item">
+        <div class="loyalty-carousel__item js-loyalty-item" data-earn-pts="10" data-pay-pts="100">
           <div class="lc-item">
             <div class="lc-item__image">
               <img src="img/dish.png" alt="Pizza&Drink">
@@ -86,13 +107,20 @@
                 <p>Line 2.........Line 2........Line 2</p>
               </div>
               <div class="lc-item__price">£2.99</div>
+              <div class="lc-item__loyalty">
+                <div class="bonus-earn">
+                  <div class="bonus-earn__icon">{{mixins.icon('crown')}}</div>
+                  <div class="bonus-earn__value">Earn 10 pts</div>
+                </div>
+                <div class="bonus-pay">Pay With 100 pts</div>
+              </div>
             </div>
             <div class="lc-item__allergens">
               <a href="./allergen.html" class="allergen-link">Allergens !</a>
             </div>
           </div>
         </div>
-        <div class="loyalty-carousel__item">
+        <div class="loyalty-carousel__item js-loyalty-item" data-earn-pts="10" data-pay-pts="100">
           <div class="lc-item">
             <div class="lc-item__image">
               <img src="img/dish.png" alt="Pizza&Drink">
@@ -104,13 +132,20 @@
                 <p>Line 2.........Line 2........Line 2</p>
               </div>
               <div class="lc-item__price">£2.99</div>
+              <div class="lc-item__loyalty">
+                <div class="bonus-earn">
+                  <div class="bonus-earn__icon">{{mixins.icon('crown')}}</div>
+                  <div class="bonus-earn__value">Earn 10 pts</div>
+                </div>
+                <div class="bonus-pay">Pay With 100 pts</div>
+              </div>
             </div>
             <div class="lc-item__allergens">
               <a href="./allergen.html" class="allergen-link">Allergens !</a>
             </div>
           </div>
         </div>
-        <div class="loyalty-carousel__item">
+        <div class="loyalty-carousel__item js-loyalty-item" data-earn-pts="10" data-pay-pts="100">
           <div class="lc-item">
             <div class="lc-item__image">
               <img src="img/dish.png" alt="Pizza&Drink">
@@ -122,6 +157,13 @@
                 <p>Line 2.........Line 2........Line 2</p>
               </div>
               <div class="lc-item__price">£2.99</div>
+              <div class="lc-item__loyalty">
+                <div class="bonus-earn">
+                  <div class="bonus-earn__icon">{{mixins.icon('crown')}}</div>
+                  <div class="bonus-earn__value">Earn 10 pts</div>
+                </div>
+                <div class="bonus-pay">Pay With 100 pts</div>
+              </div>
             </div>
             <div class="lc-item__allergens">
               <a href="./allergen.html" class="allergen-link">Allergens !</a>
@@ -130,10 +172,10 @@
         </div>
       </div>
     </div>
-    <div class="quantity js-counter">
+    <div class="quantity js-counter-loyalty">
       <div class="quantity__content">
         <div class="quantity__text">Quantity</div>
-        <div class="quantity__count js-counter-value" data-count-value="2">2</div>
+        <div class="quantity__count js-counter-value" data-count-value="1">1</div>
         <div class="quantity__buttons">
           <button type="button" class="quantity__button js-counter-decrement">{{mixins.icon('minus')}}</button>
           <button type="button" class="quantity__button quantity__button--plus js-counter-increment">{{mixins.icon('plus')}}</button>
@@ -189,11 +231,11 @@
     <div class="main__buttons">
       <div>
         <a href="#" class="btn btn--green">Pay & Earn Points</a>
-        <div class="loyalty-pts">20 pts</div>
+        <div class="loyalty-pts js-loyalty-earn-pts">20 pts</div>
       </div>
       <div>
         <a href="#" class="btn">Pay with Points</a>
-        <div class="loyalty-pts">120 pts</div>
+        <div class="loyalty-pts js-loyalty-pay-pts">120 pts</div>
       </div>
     </div>
 
