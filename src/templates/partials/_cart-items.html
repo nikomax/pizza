@@ -1,7 +1,7 @@
 <main class="main">
   <div class="container">
-    <div class="gradient-banner">
-      <div class="gradient-banner__title">Your Order Is For Delivery</div>
+    <div class="gradient-banner {% if shop %}gradient-banner--shop{% endif %}">
+      <div class="gradient-banner__title">{% if shop %} Your Order Is For Collection {% else %} Your Order Is For Delivery {% endif %}</div>
       <div class="gradient-banner__icon">{{mixins.icon('cart')}}</div>
     </div>
     <div class="order-pos">
@@ -33,6 +33,7 @@
     <textarea rows="4" class="cart-textarea" placeholder="Message To Driver (150)" maxlength="150"></textarea>
 
     <div class="cart-points">
+      {% if shop %}
       <div class="cart-points__main">
         <div class="cart-points__title">20 Points Will be Added To Your Acc</div>
         <div class="loyalty-bank">
@@ -41,6 +42,7 @@
           <div class="loyalty-bank__text">450</div>
         </div>
       </div>
+      {% endif %}
       <div class="cart-points__bottom">
         <button class="simple-btn">Add more items</button>
         <div class="cart-points__total">Total:  £ 7.35</div>

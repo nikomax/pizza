@@ -27,7 +27,9 @@ $('.js-loyalty-slider').slick({
   slidesToScroll: 1,
   arrows: false,
   rows: 0,
-  dots: false
+  dots: false,
+  autoplay: true,
+  autoplaySpeed: 3000
 });
 
 $('.js-loyalty-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){

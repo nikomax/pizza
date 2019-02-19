@@ -117,6 +117,8 @@ PageList:
   ready: 50
 - file: cart-items.html
   ready: 50
+- file: cart-items-shop.html
+  ready: 50
 - file: orders-type-delivery.html
   ready: 50
 - file: my-orders.html
