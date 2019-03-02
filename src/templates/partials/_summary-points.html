@@ -1,50 +1,85 @@
 <main class="main">
   <div class="container">
-    <div class="message">
-      <div class="message__title">Loyalty Points</div>
-      <div class="message__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+    <div class="loyalty-page">
+      <div class="message">
+        <div class="message__title">Loyalty Points</div>
+        <div class="message__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        </div>
       </div>
-    </div>
-    <div class="summary-total">
-      <div class="summary-total__btn">
-        <a href="#" class="btn btn--short">Calender</a>
-        <input class="js-calendar summary-total__btn-calendar" type="text" >
+      <div class="summary-total">
+        <div class="summary-total__btn">
+          <a href="#" class="btn btn--short">Calender</a>
+          <input class="js-calendar summary-total__btn-calendar" type="text">
+        </div>
+        <div class="summary-total__text">
+          <p>Total points</p>
+          <p>LOYALTY BANK</p>
+        </div>
+        <div class="summary-total__value">450</div>
       </div>
-      <div class="summary-total__text">Total points</div>
-      <div class="summary-total__value">450</div>
-    </div>
-    <div class="summary-table">
-      <div class="summary-table__row">
-        <div class="summary-table__col">Order ID</div>
-        <div class="summary-table__col">TIME</div>
-        <div class="summary-table__col">Points</div>
-        <div class="summary-table__col">TOTAL</div>
+      <div class="document-report">
+        <div class="document-report__title">Loyalty Statement</div>
+        <a href="#" download="" class="document-report__link">pdf</a>
       </div>
-      <div class="summary-table__row">
-        <div class="summary-table__col">23489564</div>
-        <div class="summary-table__col">14-07-16 10:20</div>
-        <div class="summary-table__col">{{mixins.icon('plus')}}20</div>
-        <div class="summary-table__col">450</div>
-      </div>
-      <div class="summary-table__row">
-        <div class="summary-table__col">13489354</div>
-        <div class="summary-table__col">13-07-16 10:20</div>
-        <div class="summary-table__col">{{mixins.icon('minus')}}100</div>
-        <div class="summary-table__col">120</div>
-      </div>
-      <div class="summary-table__row">
-        <div class="summary-table__col">22856598</div>
-        <div class="summary-table__col">13-07-16 12:20</div>
-        <div class="summary-table__col">{{mixins.icon('plus')}}30</div>
-        <div class="summary-table__col">120</div>
-      </div>
-      <div class="summary-table__row">
-        <div class="summary-table__col">29089498</div>
-        <div class="summary-table__col">13-07-16 10:20</div>
-        <div class="summary-table__col">{{mixins.icon('minus')}}120</div>
-        <div class="summary-table__col">140</div>
+      <div class="summary-table">
+        <div class="summary-table__row summary-table__row--first">
+          <div class="summary-table__col">Order ID</div>
+          <div class="summary-table__col">TIME</div>
+          <div class="summary-table__col">Points</div>
+          <div class="summary-table__col">TOTAL</div>
+        </div>
+        <div class="summary-table__content">
+          <div class="summary-table__row">
+            <div class="summary-table__col">23489564</div>
+            <div class="summary-table__col">14-07-16 10:20</div>
+            <div class="summary-table__col">{{mixins.icon('plus')}}20</div>
+            <div class="summary-table__col">450</div>
+          </div>
+          <div class="summary-table__row">
+            <div class="summary-table__col">13489354</div>
+            <div class="summary-table__col">13-07-16 10:20</div>
+            <div class="summary-table__col">{{mixins.icon('minus')}}100</div>
+            <div class="summary-table__col">120</div>
+          </div>
+          <div class="summary-table__row">
+            <div class="summary-table__col">22856598</div>
+            <div class="summary-table__col">13-07-16 12:20</div>
+            <div class="summary-table__col">{{mixins.icon('plus')}}30</div>
+            <div class="summary-table__col">120</div>
+          </div>
+          <div class="summary-table__row">
+            <div class="summary-table__col">29089498</div>
+            <div class="summary-table__col">13-07-16 10:20</div>
+            <div class="summary-table__col">{{mixins.icon('minus')}}120</div>
+            <div class="summary-table__col">140</div>
+          </div>
+          <div class="summary-table__row">
+            <div class="summary-table__col">23489564</div>
+            <div class="summary-table__col">14-07-16 10:20</div>
+            <div class="summary-table__col">{{mixins.icon('plus')}}20</div>
+            <div class="summary-table__col">450</div>
+          </div>
+          <div class="summary-table__row">
+            <div class="summary-table__col">13489354</div>
+            <div class="summary-table__col">13-07-16 10:20</div>
+            <div class="summary-table__col">{{mixins.icon('minus')}}100</div>
+            <div class="summary-table__col">120</div>
+          </div>
+          <div class="summary-table__row">
+            <div class="summary-table__col">22856598</div>
+            <div class="summary-table__col">13-07-16 12:20</div>
+            <div class="summary-table__col">{{mixins.icon('plus')}}30</div>
+            <div class="summary-table__col">120</div>
+          </div>
+          <div class="summary-table__row">
+            <div class="summary-table__col">29089498</div>
+            <div class="summary-table__col">13-07-16 10:20</div>
+            <div class="summary-table__col">{{mixins.icon('minus')}}120</div>
+            <div class="summary-table__col">140</div>
+          </div>
+        </div>
       </div>
     </div>
     {% include "./_fixed-menu.html" %}

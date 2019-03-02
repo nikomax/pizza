@@ -1,12 +1,14 @@
 .summary-total
 	display: flex
-	align-items: flex-end
+	align-items: center
 	justify-content: space-between
 	margin: 2rem 0 2.2rem
 	&__text
 		font-size: 1.95rem
 		text-transform: uppercase
 		+semi
+		p
+			margin: 0.5rem 0
 	&__value
 		+semi
 		font-size: 6.45rem
@@ -14,6 +16,9 @@
 		color: #ff6c00
 		-webkit-text-fill-color: #ff6c00
 		-webkit-text-stroke: 0.05rem black
+		padding: 0 0.5rem
+		border: 0.1rem solid black
+		box-shadow: 0.1rem 0.1rem 0.1rem 0 rgba(0,0,0,0.5)
 	&__btn
 		position: relative
 	&__btn-calendar
@@ -25,6 +30,7 @@
 	margin: 0 -2rem
 	+semi
 	text-transform: uppercase
+	position: relative
 	.icon
 		vertical-align: middle
 	.icon-plus
@@ -36,12 +42,18 @@
 	&__row
 		padding: 1.8rem 0
 		display: flex
-		&:first-child
+		border-bottom: 1px solid #d9d9d9
+		&--first
+			z-index: 1
+			position: relative
 			font-size: 1.35rem
 			color: #606060
 			background-color: #d9d9d9
-		&:not(:first-child)
-			border-bottom: 1px solid #d9d9d9
+			border-bottom: none
+	&__content
+		padding-top: 5rem
+		+coverdiv
+		overflow: auto
 	&__col
 		text-align: center
 		padding: 0 0.1rem
@@ -121,3 +133,23 @@
 	.flatpickr-day.selected.startRange + .endRange:not(:nth-child(7n+1)), .flatpickr-day.startRange.startRange + .endRange:not(:nth-child(7n+1)), .flatpickr-day.endRange.startRange + .endRange:not(:nth-child(7n+1))
 		box-shadow: -1rem 0 0 #f46806, 1rem 0 0 #f46806
 
+.document-report
+	border-top: 1px solid #d9d9d9
+	display: flex
+	align-items: center
+	justify-content: space-between
+	margin: 0 -2rem
+	padding: 1.5rem 5rem 1.5rem 2rem
+	&__title
+		font-size: 2.4rem
+		+semi
+		color: #6a86ff
+	&__link
+		display: block
+		text-transform: uppercase
+		font-size: 2rem
+		border: 0.2rem solid black
+		border-radius: 0.7rem
+		padding: 0.3rem 0.5rem
+		text-decoration: none
+		color: inherit
