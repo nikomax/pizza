@@ -1,11 +1,27 @@
 <main class="main">
   <div class="container">
-    <div class="m-items">
+    <div class="message js-accordion accordion">
+      <div class="message__title js-accordion-link">Stoupid Pizza{{mixins.icon('bottom')}}</div>
+      <div class="message__text accordion__content js-accordion-content">
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+      </div>
+    </div>
+    <div class="m-items js-accordion accordion is-active">
+      <div class="m-items__modal js-accordion-content">
+        <div class="yellow-alert">
+          <button class="yellow-alert__close js-accordion-link">x</button>
+          <div class="yellow-alert__content">
+            Not Serving Now
+          </div>
+        </div>
+      </div>
       {% for item in food %}
       <div class="m-item">
-        <div class="m-item__image js-item-modal-btn" data-item-title="{{item.title}}" data-item-image="/img/food.png" data-item-desc="{{item.desc}}">
+        <div class="m-item__image js-item-modal-btn" data-item-title="{{item.title}}" data-item-image="/img/food.png"
+             data-item-desc="{{item.desc}}">
           {% if item.image %}
-            <img src="{{item.image}}" alt="{{item.title}}">
+          <img src="{{item.image}}" alt="{{item.title}}">
           {% endif %}
         </div>
         <a href="#" class="m-item__content">
@@ -20,7 +36,7 @@
             <div class="m-item__get-bonus">
               <div class="bonus-earn">
                 <div class="bonus-earn__icon">{{mixins.icon('crown')}}</div>
-                <div class="bonus-earn__value">Get {{item.getPts}}  pts</div>
+                <div class="bonus-earn__value">Get {{item.getPts}} pts</div>
               </div>
             </div>
             <div class="m-item__pay-bonus">Pay With {{item.payPts}} pts</div>
@@ -32,18 +48,13 @@
     </div>
     {% include "./_fixed-menu.html" %}
   </div>
-  <!--<div class="serving-popup is-active js-popup">-->
-    <!--<button class="serving-popup__close js-popup-close">X</button>-->
-    <!--<p>Stopped Serving !</p>-->
-    <!--<p>Next  Serving  Tomorrow</p>-->
+  <!--<div class="s-popup is-active js-popup">-->
+    <!--<div class="s-popup__inner s-popup__inner&#45;&#45;serving">-->
+      <!--<button class="s-popup__close js-popup-close">X</button>-->
+      <!--<p>Stopped Serving !</p>-->
+      <!--<p>Next Serving Tomorrow</p>-->
+    <!--</div>-->
   <!--</div>-->
-  <div class="s-popup is-active js-popup">
-    <div class="s-popup__inner s-popup__inner--serving">
-      <button class="s-popup__close js-popup-close">X</button>
-      <p>Stopped Serving !</p>
-      <p>Next  Serving  Tomorrow</p>
-    </div>
-  </div>
   <div class="item-modal js-item-modal">
     <div class="item-modal__title js-item-modal-title">test</div>
     <div class="item-modal__desc js-item-modal-desc">test</div>

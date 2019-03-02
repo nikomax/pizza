@@ -1,9 +1,12 @@
 <main class="main">
   <div class="container">
-    <div class="review-page">
+    <div class="review-page js-review-page">
+      <div class="review-page__write">
+        {% include "./_review-write.html" %}
+      </div>
       <div class="title-button">
         <h2 class="title">Reviews</h2>
-        <a href="#" class="btn">Write A Review</a>
+        <a href="#" class="btn js-review-btn">Write A Review</a>
       </div>
       <div class="review-rates">
         <div class="review-rates__left">

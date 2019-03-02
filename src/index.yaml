@@ -25,8 +25,8 @@ PageList:
   ready: 50
 - file: review.html
   ready: 50
-- file: review-write.html
-  ready: 50
+#- file: review-write.html
+#  ready: 50
 - file: review-write-thank.html
   ready: 50
 - file: open-delivery-times.html
@@ -59,11 +59,11 @@ PageList:
   ready: 50
 - file: shop-or-delivery.html
   ready: 50
-- file: summary-points.html
+- file: loyalty-bank.html
+  ready: 50
+- file: loyalty-buy.html
   ready: 50
 - file: error-message.html
-  ready: 50
-- file: loyalty-bank.html
   ready: 50
 - file: add-points.html
   ready: 50

@@ -1,7 +1,16 @@
 <header class="header">
   <div class="header__inner">
     <div class="header__left">
-      {% if headerBack %}
+      {% if headerBoth %}
+        <div class="header__nav js-header-nav">
+          <a href="#" class="header__back js-header-back">
+            {{mixins.icon('back-icon')}}
+          </a>
+          <button class="burger js-burger">
+            <img src="img/burger.png" alt="Burger">
+          </button>
+        </div>
+      {% elseif headerBack %}
         <a href="#" class="header__back">
           {{mixins.icon('back-icon')}}
         </a>
@@ -28,7 +37,7 @@
         </div>
       </div>
       <div class="header__title">
-        <h1 class="app-title">STOUPID PIZZA</h1>
+        <h1 class="app-title">{{title}}</h1>
       </div>
     </div>
     <div class="header__right">

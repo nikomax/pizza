@@ -1,6 +1,5 @@
 const passwordBtn = $('.js-password-show');
 
-
 passwordBtn.on('click', (e) => {
   const parent = $(e.currentTarget).parents('.js-password');
   if(parent.hasClass('is-visible')) {

@@ -1,3 +1,29 @@
+.m-items
+	position: relative
+	z-index: 1
+	.message + &
+		margin-top: 2rem
+	&:after
+		margin-top: 7rem
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: calc(100% - 7rem)
+		background-color: rgba(grey, 0.15)
+		z-index: 1
+		pointer-events: none
+		opacity: 0
+		transition: 0.3s
+	&__modal
+		position: relative
+		z-index: 5
+	&.is-active
+		&:after
+			opacity: 1
+			pointer-events: auto
+
 .m-item
 	display: flex
 	position: relative
