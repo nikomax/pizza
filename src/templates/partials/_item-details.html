@@ -2,12 +2,12 @@
   <div class="container">
     <div class="item-details">
       <div class="item-details__variant">
-        <span class="bonuses js-bonuses">Shop</span>
-        <span class="bonuses is-hidden js-bonuses-revert">Delivery</span>
+        <marquee behavior="alternate" class="bonuses js-bonuses"><b>Shop</b></marquee>
+        <marquee behavior="alternate" class="bonuses is-hidden js-bonuses-revert"><b>Delivery</b></marquee>
       </div>
       <div class="item-banner">
         <div class="item-banner__feedback">
-          <a href="#" class="feedback-link">
+          <a href="/review.html" class="feedback-link">
             <span class="feedback-link__stars">
               {{mixins.icon('star')}}
               {{mixins.icon('star')}}
@@ -19,7 +19,7 @@
           </a>
         </div>
         <div class="item-banner__offers">
-          <a href="#" class="vertical-link">offers</a>
+          <a href="/all-offers.html" class="vertical-link">offers</a>
         </div>
         <div class="item-banner__container">
           <div class="item-banner__pole"></div>
@@ -38,6 +38,11 @@
           <div class="bonus-earn__value">Earn 10 pts</div>
         </div>
         <div class="bonus-pay">Pay With 100 pts</div>
+      </div>
+      <div class="yellow-alert">
+        <div class="yellow-alert__content">
+          Not Serving Now
+        </div>
       </div>
       <div class="align-right">
         <a href="#" class="allergen-link">Allergens !</a>
@@ -60,7 +65,7 @@
         </div>
       </div>
       <div class="main__buttons main__buttons--center">
-        <a href="#" class="btn btn--violet btn--sm">Order Options</a>
+        <a href="/order-options.html" class="btn btn--violet btn--sm">Order Options</a>
       </div>
       <div class="loyalty-bank">
         <div class="loyalty-bank__icon">{{mixins.icon('crown')}}</div>
@@ -111,11 +116,11 @@
         </div>
       </div>
       <div class="main__buttons main__buttons--sm main__buttons--center">
-        <a href="#" class="btn btn--sm btn--rainbow">Add & Continue</a>
+        <a href="/item-details-order.html" class="btn btn--sm btn--rainbow">Add & Continue</a>
       </div>
       <div class="main__buttons main__buttons--center main__buttons--sm">
-        <a href="#" class="btn btn--sm">Add To Cart</a>
-        <a href="#" class="btn btn--sm btn--blue js-bonuses bonuses">Pay With Pts</a>
+        <a href="/cart-items.html" class="btn btn--sm">Add To Cart</a>
+        <a href="/substract-points.html" class="btn btn--sm btn--blue js-bonuses bonuses">Pay With Pts</a>
       </div>
     </div>
     {% include "./_fixed-menu.html" %}
@@ -124,7 +129,7 @@
     <div class="s-popup__inner s-popup__inner--add-order">
       <button class="s-popup__close js-popup-close">X</button>
       <p>Order Added</p>
-      <p>Continue with adding to the Order</p>
+      <p class="blue-text">Continue with adding to the Order</p>
     </div>
   </div>
   <div class="s-popup js-popup {% if itemDetailsWarningModal %}is-active{% endif %}">

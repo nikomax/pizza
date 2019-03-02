@@ -11,7 +11,7 @@
           </button>
         </div>
       {% elseif headerBack %}
-        <a href="#" class="header__back">
+        <a href="{% if headerBackLink %}{{headerBackLink}}{% else %}#{% endif %}" class="header__back">
           {{mixins.icon('back-icon')}}
         </a>
       {% else %}

@@ -20,6 +20,7 @@
 			top: 50%
 			right: 4.5rem
 			transform: translateY(-50%)
+			transition: 0.3s
 	&__info
 		padding: 0 2.9rem 0 1.7rem
 		display: flex
@@ -61,6 +62,9 @@
 			display: flex
 		.times-banner__not-delivering
 			display: none
+	&.is-active
+		.icon
+			transform: translateY(-50%) rotate(180deg)
 
 .cat-menu-item
 	margin: 2rem 0

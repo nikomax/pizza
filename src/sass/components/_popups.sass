@@ -21,8 +21,12 @@
 		background-color: #FFFFFF
 		box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.71)
 		&--add-order
+			+semi
 			text-align: center
 			font-size: 4rem
+			background-color: #fff200
+			-webkit-text-stroke: 0.05rem white
+			text-shadow: 0 0 0.2rem white
 		&--choose
 			background-color: #d5d5d5
 		&--serving
@@ -37,6 +41,7 @@
 			padding: 3rem 2rem 1rem
 			line-height: 1.5
 	&__close
+		-webkit-text-stroke: initial
 		+semi
 		text-decoration: none
 		position: absolute
@@ -84,7 +89,7 @@
 	border-radius: 0.2rem
 	margin: 0 auto 2rem
 	position: relative
-	padding: 1rem
+	padding: 0.5rem
 	&__content
 		font-size: 4.05rem
 		+semi

@@ -2,8 +2,8 @@
   <div class="container">
     <div class="item-details">
       <div class="item-details__variant">
-        <span class="bonuses js-bonuses">Shop</span>
-        <span class="bonuses is-hidden js-bonuses-revert">Delivery</span>
+        <marquee behavior="alternate" class="bonuses js-bonuses"><b>Shop</b></marquee>
+        <marquee behavior="alternate" class="bonuses is-hidden js-bonuses-revert"><b>Delivery</b></marquee>
       </div>
       {% if 3hrOffer %}
         <div class="item-details__offer-time item-details__offer-time--green">2 hr : 34 mins</div>
@@ -26,7 +26,7 @@
       </div>
       <div class="item-banner item-banner--offer">
         <div class="item-banner__feedback">
-          <a href="#" class="feedback-link">
+          <a href="/review.html" class="feedback-link">
             <span class="feedback-link__stars">
               {{mixins.icon('star')}}
               {{mixins.icon('star')}}
@@ -39,14 +39,14 @@
         </div>
         <div class="item-banner__right-links">
           {% if 3hrOffer %}
-            <a href="#" class="vertical-link vertical-link--rose">Just4</a>
-            <a href="#" class="vertical-link vertical-link--orange">daily</a>
+            <a href="/just-4-today-offer.html" class="vertical-link vertical-link--rose">Just4</a>
+            <a href="/daily-offer.html" class="vertical-link vertical-link--orange">daily</a>
           {% elseif 4TodayOffer %}
-            <a href="#" class="vertical-link vertical-link--green">3HOUR</a>
-            <a href="#" class="vertical-link vertical-link--orange">daily</a>
+            <a href="/3hr-offer.html" class="vertical-link vertical-link--green">3HOUR</a>
+            <a href="/daily-offer.html" class="vertical-link vertical-link--orange">daily</a>
           {% else %}
-            <a href="#" class="vertical-link vertical-link--green">3HOUR</a>
-            <a href="#" class="vertical-link vertical-link--rose">Just4</a>
+            <a href="/3hr-offer.html" class="vertical-link vertical-link--green">3HOUR</a>
+            <a href="/just-4-today-offer.html" class="vertical-link vertical-link--rose">Just4</a>
           {% endif %}
         </div>
         <div class="item-banner__container">
@@ -137,7 +137,7 @@
         </div>
       </div>
       <div class="main__buttons main__buttons--center">
-        <a href="#" class="btn btn--violet btn--sm">Order Options</a>
+        <a href="/order-options.html" class="btn btn--violet btn--sm">Order Options</a>
       </div>
       <div class="loyalty-bank">
         <div class="loyalty-bank__icon">{{mixins.icon('crown')}}</div>
@@ -191,8 +191,8 @@
         <a href="#" class="btn btn--sm btn--rainbow">Add & Continue</a>
       </div>
       <div class="main__buttons main__buttons--center main__buttons--sm">
-        <a href="#" class="btn btn--sm">Add To Cart</a>
-        <a href="#" class="btn btn--sm btn--blue js-bonuses bonuses">Pay With Pts</a>
+        <a href="/cart-items.html" class="btn btn--sm">Add To Cart</a>
+        <a href="/substract-points.html" class="btn btn--sm btn--blue js-bonuses bonuses">Pay With Pts</a>
       </div>
       <p class="addition-info">*Conditions Apply</p>
     </div>

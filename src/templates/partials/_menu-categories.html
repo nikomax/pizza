@@ -28,7 +28,7 @@
         </div>
       </div>
       {% for item in categoryMenuItems %}
-      <a href="./submenu.html" class="cat-menu-item">
+      <a href="{{item.link}}" class="cat-menu-item">
         <div class="cat-menu-item__image">
           {% if item.image %}
           <img src="{{item.image}}" alt="{{item.title}}">

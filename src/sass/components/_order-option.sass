@@ -3,13 +3,14 @@
 
 .t-modal
 	display: none
-	position: absolute
-	top: 0
+	position: fixed
+	top: 15rem
 	left: 0
 	width: 100%
 	background-color: rgba(255, 255, 255, 0.75)
 	box-shadow: 0.1rem 0.2rem 0.3rem 0.1rem rgba(0, 0, 0, 0.75)
 	padding: 5rem
+	z-index: 5
 	&__content
 		text-align: center
 	&__close
@@ -31,14 +32,13 @@
 	-webkit-text-fill-color: #f0ff00
 	-webkit-text-stroke: 0.1rem red
 
-
 .title-order
 	font-size: 2.9rem
 	text-align: center
 	margin: 0rem 0 2.7rem
 
 .order-option
-	margin: 1rem 0
+	margin: 3rem 0
 	$this: &
 	&__box
 		margin-top: 0.2rem

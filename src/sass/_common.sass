@@ -199,6 +199,7 @@ input
 		margin-bottom: 1rem
 		.icon
 			font-size: 1.5rem
+			transition: 0.3s
 		&--sm
 			font-size: 1.95rem
 	&__text
@@ -221,6 +222,9 @@ input
 		.message__text
 			line-height: 1.5
 			font-size: 2.4rem
+	&.is-active
+		.icon
+			transform: rotate(180deg)
 
 .text-image
 	display: block
