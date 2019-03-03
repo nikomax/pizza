@@ -19,10 +19,11 @@
 .gradient-banner
 	padding: 0.7rem
 	max-width: 35.5rem
-	margin: 0 auto
+	margin: 0 auto 2rem
 	background-image: linear-gradient(45deg, rgb(229,232,5) 0%, rgb(255,0,0) 100%)
 	box-shadow: 0.1rem 0.1rem 2rem 0.1rem rgba(0, 0, 0, 0.5)
 	border: 0.15rem solid #ffffff
+	animation: fadeIn 1.5s
 	&__title
 		font-size: 2.4rem
 		+semi
@@ -39,3 +40,6 @@
 	&--shop
 		background-image: linear-gradient( 45deg, rgb(0,255,252) 0%, rgb(0,0,0) 99%)
 
+@keyframes fadeIn
+	from
+		opacity: 0
