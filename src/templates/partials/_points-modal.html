@@ -69,7 +69,11 @@
       {% endif %}
       <div class="points__buttons">
         <a href="#" class="btn btn--short btn--white">Cancel</a>
-        <a href="#" class="btn btn--short">Confirm</a>
+        {% if not pointsValidation %}
+          <a href="{% if addPoints%}/add-points-shopkeeper.html{% else %}/substract-points-shopkeeper.html{% endif %}" class="btn btn--short">Confirm</a>
+        {% else %}
+          <a href="#" class="btn btn--short">Confirm</a>
+        {% endif %}
       </div>
     </div>
   </div>

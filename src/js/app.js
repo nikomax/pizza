@@ -10,6 +10,7 @@ import './components/tabs'
 import './components/loyalty'
 import './components/review'
 import './components/delete'
+import './components/typewriter'
 import Counter from './components/counter'
 
 const fixedMenuBtn = $('.js-fixed-menu-btn');

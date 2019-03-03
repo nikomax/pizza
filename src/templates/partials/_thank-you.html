@@ -2,8 +2,10 @@
   <div class="container">
     <div class="thnx-page">
       <div class="thnx-page__title">Thank you for the custom</div>
-      <div class="y-box y-box--thnx">
-        <div class="y-box__title">Points Have Been Updated</div>
+      <div class="title-curtains">
+        <div class="y-box y-box--thnx">
+          <div class="y-box__title">Points Have Been Updated</div>
+        </div>
       </div>
       <div class="thnx-page__image">
         <img src="img/dish.png" alt="Food">
@@ -13,9 +15,9 @@
         <div class="thnx-page__form-title">Review</div>
         <form action="" class="taste-form">
           <label for="title" class="taste-form__label">Title</label>
-          <input type="text" class="taste-form__input taste-form__input--sm-text" placeholder="Title" maxlength="25" id="title">
+          <input type="text" class="taste-form__input taste-form__input--sm-text" placeholder="Title" maxlength="15" id="title">
           <label for="feedback" class="taste-form__label">Feedback</label>
-          <textarea name="" rows="7" class="taste-form__textarea taste-form__textarea--sm-text" placeholder="Your Valued Comment" id="feedback"></textarea>
+          <textarea name="" rows="7" class="taste-form__textarea taste-form__textarea--sm-text" placeholder="Your Valued Comment" id="feedback" maxlength="75"></textarea>
           <div class="taste-form__rank-item">
             <span>Taste</span>
             <div class="rank rank--sm">
@@ -67,9 +69,7 @@
               </div>
             </div>
           </div>
-          <div class="review-thank-title">
-            Thank You For The Review
-          </div>
+          <div class="review-thank-title js-typewriter typewriter" data-typewriter-text="Thank You For The Review"></div>
           <div class="main__buttons main__buttons--m1">
             <button type="reset" class="btn btn--white">Clear</button>
             <button type="submit" class="btn">Send</button>
