@@ -9,6 +9,7 @@ import './components/language-click'
 import './components/tabs'
 import './components/loyalty'
 import './components/review'
+import './components/delete'
 import Counter from './components/counter'
 
 const fixedMenuBtn = $('.js-fixed-menu-btn');
@@ -19,6 +20,10 @@ const sidebar = $('.js-sidebar');
 const cart = $('.js-cart-menu');
 const verification = $('.js-verification');
 const counters = $('.js-counter');
+const bonuses = $('.js-bonuses');
+const bonusesRevert = $('.js-bonuses-revert');
+const variant = $('.js-variant');
+const deliveryRadioBtn = $('.js-delivery-radio');
 
 counters.each((item, counter) => {
   new Counter($(counter))
@@ -86,10 +91,7 @@ verification.on('keyup', 'input', goToNextInput);
 // verification.on('keydown', 'input', onKeyDown);
 verification.on('click', 'input', onFocus);
 
-const bonuses = $('.js-bonuses');
-const bonusesRevert = $('.js-bonuses-revert');
-
-$('.js-variant').scroll( (e) => {
+variant.scroll( (e) => {
   if ($(e.currentTarget).scrollLeft() !== 0) {
     bonuses.addClass('is-hidden');
     bonusesRevert.removeClass('is-hidden');
@@ -99,7 +101,7 @@ $('.js-variant').scroll( (e) => {
   }
 });
 
-$('.js-delivery-radio').on('click', (e) => {
+deliveryRadioBtn.on('click', (e) => {
   if ($(e.currentTarget).find('.js-delivery-radio-delivery:checked').length) {
     $('.js-delivery-addresses').fadeIn();
   } else {
